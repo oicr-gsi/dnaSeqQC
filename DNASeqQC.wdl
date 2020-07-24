@@ -141,11 +141,17 @@ workflow dnaSeqQC {
             url: "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
         }
       ]
+      output_meta: {
+        html_report_R1: "HTML report for the first mate fastq file.",
+        zip_bundle_R1: "zipped report from FastQC for the first mate reads.",
+        html_report_R2: "HTML report for read second mate fastq file.",
+        zip_bundle_R2: "zipped report from FastQC for the second mate reads."
+        result: "bamQC report"
+      }
     }
 
     output {
         File result = bamQC.result
-        
         File? html_report_R1 = fastQC.html_report_R1
         File? zip_bundle_R1 = fastQC.zip_bundle_R1
         File? html_report_R2 = fastQC.html_report_R2
