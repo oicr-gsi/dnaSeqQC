@@ -1,20 +1,67 @@
 {
-  "DNASeqQC.fastqR1": "/.mounts/labs/gsi/testdata/bwamem/input_data/PCSI0022C.val.1.fastq.gz",
-  "DNASeqQC.fastqR2": "/.mounts/labs/gsi/testdata/bwamem/input_data/PCSI0022C.val.2.fastq.gz",
-  "DNASeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
-  "DNASeqQC.readGroups": "'@RG\\tID:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tLB:PCSI0022C\\tPL:ILLUMINA\\tPU:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tSM:PCSI0022C'",
-  "DNASeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
-  "DNASeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
-  "DNASeqQC.findDownsampleParams_targetReads": 20000,
-  "DNASeqQC.metadata": {
-    "donor": "Xenomorph",
-    "group id": "Weyland-Yutani",
-    "library design": "WY-1001",
-    "tissue origin": "LV-426",
-    "tissue type": "Claw fragment"
+  "defaults": {
+    "description": "DNASeqQC workflow test",
+    "metrics_calculate": "calculate.sh",
+    "metrics_compare": "compare.sh",
+    "output_metrics_dir": "/.mounts/labs/gsi/testdata/DNAseqQC/output_metrics/",
+    "parameters": {
+      "wdl_options": {
+        "write_to_cache": false,
+        "read_from_cache": false
+      }
+    }
   },
-  "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-  "DNASeqQC.runFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+  "tests": [
+    {
+      "id": "DNASeqQC_test_with_downsample",
+      "parameters": {
+        "wdl_inputs": {
+          "DNASeqQC.fastqR1": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+          "DNASeqQC.fastqR2": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+          "DNASeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
+          "DNASeqQC.readGroups": "'@RG\\tID:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tLB:PCSI0022C\\tPL:ILLUMINA\\tPU:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tSM:PCSI0022C'",
+          "DNASeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+          "DNASeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "DNASeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+          "DNASeqQC.findDownsampleParams_targetReads": 20000,
+          "DNASeqQC.metadata": {
+            "donor": "Xenomorph",
+            "group id": "Weyland-Yutani",
+            "library design": "WY-1001",
+            "tissue origin": "LV-426",
+            "tissue type": "Claw fragment"
+          },
+          "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+          "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "DNASeqQC.runFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+        }
+      }
+    },
+    {
+      "id": "DNASeqQC_test_CRE",
+      "parameters": {
+        "wdl_inputs": {
+          "DNASeqQC.fastqR1": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+          "DNASeqQC.fastqR2": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+          "DNASeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
+          "DNASeqQC.readGroups": "'@RG\\tID:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tLB:PCSI0022C\\tPL:ILLUMINA\\tPU:121005_h804_0096_AD0V4NACXX-NoIndex_6\\tSM:PCSI0022C'",
+          "DNASeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+          "DNASeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "DNASeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+          "DNASeqQC.findDownsampleParams_targetReads": 100000,
+          "DNASeqQC.findDownsampleParamsMarkDup_threshold": 100000,
+          "DNASeqQC.metadata": {
+            "donor": "Xenomorph",
+            "group id": "Weyland-Yutani",
+            "library design": "WY-1001",
+            "tissue origin": "LV-426",
+            "tissue type": "Claw fragment"
+          },
+          "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+          "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "DNASeqQC.runFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+        }
+      }
+    }
+  ]
 }
