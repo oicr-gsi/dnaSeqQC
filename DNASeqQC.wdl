@@ -4,7 +4,7 @@ import "imports/pull_bwaMem_module.wdl" as bwaMem
 import "imports/pull_bamQC_module.wdl" as bamQC
 import "imports/pull_fastQC_module.wdl" as fastQC
 
-workflow DNASeqQC {
+workflow dnaSeqQC {
     input {
         # bwaMem inputs
         File fastqR1
