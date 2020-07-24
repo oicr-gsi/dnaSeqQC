@@ -1,2 +1,2 @@
-# DNASeqQC
-DNASeqQC Pipeline; chains bwaMem, fastQC, and bamQC
+# bwa-bamqc-align
+Calls the bwaMem - bamQC alignment as a single step
