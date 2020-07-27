@@ -145,7 +145,7 @@ workflow dnaSeqQC {
         html_report_R1: "HTML report for the first mate fastq file.",
         zip_bundle_R1: "zipped report from FastQC for the first mate reads.",
         html_report_R2: "HTML report for read second mate fastq file.",
-        zip_bundle_R2: "zipped report from FastQC for the second mate reads."
+        zip_bundle_R2: "zipped report from FastQC for the second mate reads.",
         result: "bamQC report"
       }
     }
