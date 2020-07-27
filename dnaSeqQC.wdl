@@ -285,7 +285,7 @@ workflow dnaSeqQC {
 
     call fastQC.fastQC {
         input:
-            secondMateZip_timeout =  secondMateZip_timeou,
+            secondMateZip_timeout =  secondMateZip_timeout,
             secondMateZip_jobMemory = secondMateZip_jobMemory,
             secondMateHtml_timeout = secondMateHtml_timeout,
             secondMateHtml_jobMemory = secondMateHtml_jobMemory,
