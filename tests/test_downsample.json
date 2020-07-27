@@ -16,5 +16,6 @@
   },
   "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
   "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-  "DNASeqQC.runFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+  "DNASeqQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
+  "DNASeqQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
 }
