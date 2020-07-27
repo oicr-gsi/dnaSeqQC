@@ -14,7 +14,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <workflow-description>Calls the bwaMem-bamQC alignment as a single step.</workflow-description>
+        <workflow-description>Feeds bwaMem into bamQC and fastQC.</workflow-description>
         <wdl-workflow>dnaSeqQC.wdl</wdl-workflow>
         <test-basedir>tests/</test-basedir>
     </properties>

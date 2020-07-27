@@ -309,7 +309,7 @@ workflow dnaSeqQC {
     meta {
         author: "Fenglin Chen"
         email: "g3chen@oicr.on.ca"
-        description: "DNASeqQC Runs bwaMem and bamQC as a single step"
+        description: "Feeds bwaMem into bamQC and fastQC."
         dependencies: [
         {
             name: "bwa/0.7.12",
