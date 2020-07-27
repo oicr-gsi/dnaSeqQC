@@ -1,5 +1,0 @@
-{
-  "fastQC.fastqR1": "/.mounts/labs/gsi/testdata/bwamem/input_data/PCSI0022C.val.1.fastq.gz",
-  "fastQC.fastqR2": "/.mounts/labs/gsi/testdata/bwamem/input_data/PCSI0022C.val.2.fastq.gz",
-  "fastQC.runFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
-}
