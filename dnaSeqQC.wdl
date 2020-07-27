@@ -36,7 +36,7 @@ workflow dnaSeqQC {
         File fastqR1
         File fastqR2
         String readGroups
-        String outputFileNamePrefix = "output"
+        String bwa_outputFileNamePrefix = "output"
         Int numChunk = 1
         Boolean doTrim = false
         Int trimMinLength = 1
@@ -118,7 +118,7 @@ workflow dnaSeqQC {
         Int filter_minQuality = 30
         # File bamFile
         Map[String, String] metadata
-        String outputFileNamePrefix = "bamQC"
+        String bamqc_outputFileNamePrefix = "bamQC"
 
         # fastQC inputs minus the two fastqs (dup)
         Int secondMateZip_timeout = 1
@@ -137,7 +137,7 @@ workflow dnaSeqQC {
         Int firstMateFastQC_jobMemory = 6
         # File fastqR1 
         # File? fastqR2
-        String outputFileNamePrefix = ""
+        String fastqc_outputFileNamePrefix = ""
         String r1Suffix = "_R1"
         String r2Suffix = "_R2"
     }
@@ -196,7 +196,7 @@ workflow dnaSeqQC {
             fastqR1 = fastqR1,
             fastqR2 = fastqR2,
             readGroups = readGroups,
-            outputFileNamePrefix = outputFileNamePrefix,
+            outputFileNamePrefix = bwa_outputFileNamePrefix,
             numChunk = numChunk,
             doTrim = doTrim,
             trimMinLength = trimMinLength,
@@ -280,7 +280,7 @@ workflow dnaSeqQC {
             filter_minQuality = filter_minQuality,
             bamFile = bwaMem.bwaMemBam,
             metadata = metadata,
-            outputFileNamePrefix = outputFileNamePrefix
+            outputFileNamePrefix = bamqc_outputFileNamePrefix
     }
 
     call fastQC.fastQC {
@@ -301,7 +301,7 @@ workflow dnaSeqQC {
             firstMateFastQC_jobMemory = firstMateFastQC_jobMemory,
             fastqR1 = fastqR1,
             fastqR2 = fastqR2,
-            outputFileNamePrefix = outputFileNamePrefix,
+            outputFileNamePrefix = fastqc_outputFileNamePrefix,
             r1Suffix = r1Suffix,
             r2Suffix = r2Suffix
     }
