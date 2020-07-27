@@ -36,7 +36,7 @@ workflow dnaSeqQC {
         File fastqR1
         File fastqR2
         String readGroups
-        String bwa_outputFileNamePrefix = "output"
+        String bwaMem_outputFileNamePrefix = "output"
         Int numChunk = 1
         Boolean doTrim = false
         Int trimMinLength = 1
@@ -196,7 +196,7 @@ workflow dnaSeqQC {
             fastqR1 = fastqR1,
             fastqR2 = fastqR2,
             readGroups = readGroups,
-            outputFileNamePrefix = bwa_outputFileNamePrefix,
+            outputFileNamePrefix = bwaMem_outputFileNamePrefix,
             numChunk = numChunk,
             doTrim = doTrim,
             trimMinLength = trimMinLength,
