@@ -1,21 +1,21 @@
 {
-  "DNASeqQC.fastqR1": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
-  "DNASeqQC.fastqR2": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
-  "DNASeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
-  "DNASeqQC.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
-  "DNASeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
-  "DNASeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
-  "DNASeqQC.findDownsampleParams_targetReads": 100000,
-  "DNASeqQC.metadata": {
+  "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+  "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+  "dnaSeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
+  "dnaSeqQC.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
+  "dnaSeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+  "dnaSeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+  "dnaSeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+  "dnaSeqQC.findDownsampleParams_targetReads": 100000,
+  "dnaSeqQC.metadata": {
     "donor": "Xenomorph",
     "group id": "Weyland-Yutani",
     "library design": "WY-1001",
     "tissue origin": "LV-426",
     "tissue type": "Claw fragment"
   },
-  "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-  "DNASeqQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-  "DNASeqQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+  "dnaSeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+  "dnaSeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+  "dnaSeqQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
+  "dnaSeqQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
 }

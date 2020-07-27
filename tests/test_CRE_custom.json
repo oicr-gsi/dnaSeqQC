@@ -1,23 +1,23 @@
 {
-  "DNASeqQC.fastqR1": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
-  "DNASeqQC.fastqR2": "/.mounts/labs/gsi/testdata/DNAseqQC/input_data/DNASeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
-  "DNASeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
-  "DNASeqQC.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
-  "DNASeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
-  "DNASeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
-  "DNASeqQC.findDownsampleParams_targetReads": 100000,
-  "DNASeqQC.findDownsampleParamsMarkDup_threshold": 100000,
-  "DNASeqQC.findDownsampleParamsMarkDup_customRegions": "chr1:100000001-200000000 chr2:100000001-200000000",
-  "DNASeqQC.metadata": {
+  "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+  "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+  "dnaSeqQC.bwaMem_outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
+  "dnaSeqQC.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
+  "dnaSeqQC.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+  "dnaSeqQC.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+  "dnaSeqQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+  "dnaSeqQC.findDownsampleParams_targetReads": 100000,
+  "dnaSeqQC.findDownsampleParamsMarkDup_threshold": 100000,
+  "dnaSeqQC.findDownsampleParamsMarkDup_customRegions": "chr1:100000001-200000000 chr2:100000001-200000000",
+  "dnaSeqQC.metadata": {
     "donor": "Xenomorph",
     "group id": "Weyland-Yutani",
     "library design": "WY-1001",
     "tissue origin": "LV-426",
     "tissue type": "Claw fragment"
   },
-  "DNASeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-  "DNASeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-  "DNASeqQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-  "DNASeqQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+  "dnaSeqQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+  "dnaSeqQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+  "dnaSeqQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
+  "dnaSeqQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
 }
