@@ -41,32 +41,32 @@ workflow bwaMem {
     }
 
     parameter_meta {
-        adapterTrimmingLog_timeout: Hours before task timeout
-        adapterTrimmingLog_jobMemory: Memory allocated indexing job
-        indexBam_timeout: Hours before task timeout
-        indexBam_modules: Modules for running indexing job
-        indexBam_jobMemory: Memory allocated indexing job
-        bamMerge_timeout: Hours before task timeout
-        bamMerge_modules: Required environment modules
-        bamMerge_jobMemory: Memory allocated indexing job
-        runBwaMem_timeout: Hours before task timeout
-        runBwaMem_jobMemory: Memory allocated for this job
-        runBwaMem_threads: Requested CPU threads
-        runBwaMem_addParam: Additional BWA parameters
-        runBwaMem_bwaRef: The reference genome to align the sample with by BWA
-        runBwaMem_modules: Required environment modules
-        adapterTrimming_timeout: Hours before task timeout
-        adapterTrimming_jobMemory: Memory allocated for this job
-        adapterTrimming_addParam: Additional cutadapt parameters
-        adapterTrimming_modules: Required environment modules
-        slicerR2_timeout: Hours before task timeout
-        slicerR2_jobMemory: Memory allocated for this job
-        slicerR2_modules: Required environment modules
-        slicerR1_timeout: Hours before task timeout
-        slicerR1_jobMemory: Memory allocated for this job
-        slicerR1_modules: Required environment modules
-        countChunkSize_timeout: Hours before task timeout
-        countChunkSize_jobMemory: Memory allocated for this job
+        adapterTrimmingLog_timeout: "Hours before task timeout"
+        adapterTrimmingLog_jobMemory: "Memory allocated indexing job"
+        indexBam_timeout: "Hours before task timeout"
+        indexBam_modules: "Modules for running indexing job"
+        indexBam_jobMemory: "Memory allocated indexing job"
+        bamMerge_timeout: "Hours before task timeout"
+        bamMerge_modules: "Required environment modules"
+        bamMerge_jobMemory: "Memory allocated indexing job"
+        runBwaMem_timeout: "Hours before task timeout"
+        runBwaMem_jobMemory: "Memory allocated for this job"
+        runBwaMem_threads: "Requested CPU threads"
+        runBwaMem_addParam: "Additional BWA parameters"
+        runBwaMem_bwaRef: "The reference genome to align the sample with by BWA"
+        runBwaMem_modules: "Required environment modules"
+        adapterTrimming_timeout: "Hours before task timeout"
+        adapterTrimming_jobMemory: "Memory allocated for this job"
+        adapterTrimming_addParam: "Additional cutadapt parameters"
+        adapterTrimming_modules: "Required environment modules"
+        slicerR2_timeout: "Hours before task timeout"
+        slicerR2_jobMemory: "Memory allocated for this job"
+        slicerR2_modules: "Required environment modules"
+        slicerR1_timeout: "Hours before task timeout"
+        slicerR1_jobMemory: "Memory allocated for this job"
+        slicerR1_modules: "Required environment modules"
+        countChunkSize_timeout: "Hours before task timeout"
+        countChunkSize_jobMemory: "Memory allocated for this job"
         fastqR1: "fastq file for read 1"
         fastqR2: "fastq file for read 2"
         readGroups: "Complete read group header line"

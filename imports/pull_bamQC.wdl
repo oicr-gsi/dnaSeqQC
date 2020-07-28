@@ -80,77 +80,77 @@ workflow bamQC {
     }
 
     parameter_meta {
-        collateResults_timeout: hours before task timeout
-        collateResults_threads: Requested CPU threads
-        collateResults_jobMemory: Memory allocated for this job
-        collateResults_modules: required environment modules
-        cumulativeDistToHistogram_timeout: hours before task timeout
-        cumulativeDistToHistogram_threads: Requested CPU threads
-        cumulativeDistToHistogram_jobMemory: Memory allocated for this job
-        cumulativeDistToHistogram_modules: required environment modules
-        runMosdepth_timeout: hours before task timeout
-        runMosdepth_threads: Requested CPU threads
-        runMosdepth_jobMemory: Memory allocated for this job
-        runMosdepth_modules: required environment modules
-        bamQCMetrics_timeout: hours before task timeout
-        bamQCMetrics_threads: Requested CPU threads
-        bamQCMetrics_jobMemory: Memory allocated for this job
-        bamQCMetrics_modules: required environment modules
-        bamQCMetrics_normalInsertMax: Maximum of expected insert size range
-        bamQCMetrics_workflowVersion: Workflow version string
-        bamQCMetrics_refSizesBed: Path to human genome BED reference with chromosome sizes
-        bamQCMetrics_refFasta: Path to human genome FASTA reference
-        markDuplicates_timeout: hours before task timeout
-        markDuplicates_threads: Requested CPU threads
-        markDuplicates_jobMemory: Memory allocated for this job
-        markDuplicates_modules: required environment modules
-        markDuplicates_picardMaxMemMb: Memory requirement in MB for running Picard JAR
-        markDuplicates_opticalDuplicatePixelDistance: Maximum offset between optical duplicate clusters
-        downsampleRegion_timeout: hours before task timeout
-        downsampleRegion_threads: Requested CPU threads
-        downsampleRegion_jobMemory: Memory allocated for this job
-        downsampleRegion_modules: required environment modules
-        downsample_timeout: hours before task timeout
-        downsample_threads: Requested CPU threads
-        downsample_jobMemory: Memory allocated for this job
-        downsample_modules: required environment modules
-        downsample_randomSeed: Random seed for pre-downsampling (if any)
-        downsample_downsampleSuffix: Suffix for output file
-        findDownsampleParamsMarkDup_timeout: hours before task timeout
-        findDownsampleParamsMarkDup_threads: Requested CPU threads
-        findDownsampleParamsMarkDup_jobMemory: Memory allocated for this job
-        findDownsampleParamsMarkDup_modules: required environment modules
-        findDownsampleParamsMarkDup_customRegions: Custom downsample regions; overrides chromosome and interval parameters
-        findDownsampleParamsMarkDup_intervalStart: Start of interval in each chromosome, for very large BAMs
-        findDownsampleParamsMarkDup_baseInterval: Base width of interval in each chromosome, for very large BAMs
-        findDownsampleParamsMarkDup_chromosomes: Array of chromosome identifiers for downsampled subset
-        findDownsampleParamsMarkDup_threshold: Minimum number of reads to conduct downsampling
-        findDownsampleParams_timeout: hours before task timeout
-        findDownsampleParams_threads: Requested CPU threads
-        findDownsampleParams_jobMemory: Memory allocated for this job
-        findDownsampleParams_modules: required environment modules
-        findDownsampleParams_preDSMultiplier: Determines target size for pre-downsampled set (if any). Must have (preDSMultiplier) < (minReadsRelative).
-        findDownsampleParams_precision: Number of decimal places in fraction for pre-downsampling
-        findDownsampleParams_minReadsRelative: Minimum value of (inputReads)/(targetReads) to allow pre-downsampling
-        findDownsampleParams_minReadsAbsolute: Minimum value of targetReads to allow pre-downsampling
-        findDownsampleParams_targetReads: Desired number of reads in downsampled output
-        indexBamFile_timeout: hours before task timeout
-        indexBamFile_threads: Requested CPU threads
-        indexBamFile_jobMemory: Memory allocated for this job
-        indexBamFile_modules: required environment modules
-        countInputReads_timeout: hours before task timeout
-        countInputReads_threads: Requested CPU threads
-        countInputReads_jobMemory: Memory allocated for this job
-        countInputReads_modules: required environment modules
-        updateMetadata_timeout: hours before task timeout
-        updateMetadata_threads: Requested CPU threads
-        updateMetadata_jobMemory: Memory allocated for this job
-        updateMetadata_modules: required environment modules
-        filter_timeout: hours before task timeout
-        filter_threads: Requested CPU threads
-        filter_jobMemory: Memory allocated for this job
-        filter_modules: required environment modules
-        filter_minQuality: Minimum alignment quality to pass filter
+        collateResults_timeout: "hours before task timeout"
+        collateResults_threads: "Requested CPU threads"
+        collateResults_jobMemory: "Memory allocated for this job"
+        collateResults_modules: "required environment modules"
+        cumulativeDistToHistogram_timeout: "hours before task timeout"
+        cumulativeDistToHistogram_threads: "Requested CPU threads"
+        cumulativeDistToHistogram_jobMemory: "Memory allocated for this job"
+        cumulativeDistToHistogram_modules: "required environment modules"
+        runMosdepth_timeout: "hours before task timeout"
+        runMosdepth_threads: "Requested CPU threads"
+        runMosdepth_jobMemory: "Memory allocated for this job"
+        runMosdepth_modules: "required environment modules"
+        bamQCMetrics_timeout: "hours before task timeout"
+        bamQCMetrics_threads: "Requested CPU threads"
+        bamQCMetrics_jobMemory: "Memory allocated for this job"
+        bamQCMetrics_modules: "required environment modules"
+        bamQCMetrics_normalInsertMax: "Maximum of expected insert size range"
+        bamQCMetrics_workflowVersion: "Workflow version string"
+        bamQCMetrics_refSizesBed: "Path to human genome BED reference with chromosome sizes"
+        bamQCMetrics_refFasta: "Path to human genome FASTA reference"
+        markDuplicates_timeout: "hours before task timeout"
+        markDuplicates_threads: "Requested CPU threads"
+        markDuplicates_jobMemory: "Memory allocated for this job"
+        markDuplicates_modules: "required environment modules"
+        markDuplicates_picardMaxMemMb: "Memory requirement in MB for running Picard JAR"
+        markDuplicates_opticalDuplicatePixelDistance: "Maximum offset between optical duplicate clusters"
+        downsampleRegion_timeout: "hours before task timeout"
+        downsampleRegion_threads: "Requested CPU threads"
+        downsampleRegion_jobMemory: "Memory allocated for this job"
+        downsampleRegion_modules: "required environment modules"
+        downsample_timeout: "hours before task timeout"
+        downsample_threads: "Requested CPU threads"
+        downsample_jobMemory: "Memory allocated for this job"
+        downsample_modules: "required environment modules"
+        downsample_randomSeed: "Random seed for pre-downsampling (if any)"
+        downsample_downsampleSuffix: "Suffix for output file"
+        findDownsampleParamsMarkDup_timeout: "hours before task timeout"
+        findDownsampleParamsMarkDup_threads: "Requested CPU threads"
+        findDownsampleParamsMarkDup_jobMemory: "Memory allocated for this job"
+        findDownsampleParamsMarkDup_modules: "required environment modules"
+        findDownsampleParamsMarkDup_customRegions: "Custom downsample regions; overrides chromosome and interval parameters"
+        findDownsampleParamsMarkDup_intervalStart: "Start of interval in each chromosome, for very large BAMs"
+        findDownsampleParamsMarkDup_baseInterval: "Base width of interval in each chromosome, for very large BAMs"
+        findDownsampleParamsMarkDup_chromosomes: "Array of chromosome identifiers for downsampled subset"
+        findDownsampleParamsMarkDup_threshold: "Minimum number of reads to conduct downsampling"
+        findDownsampleParams_timeout: "hours before task timeout"
+        findDownsampleParams_threads: "Requested CPU threads"
+        findDownsampleParams_jobMemory: "Memory allocated for this job"
+        findDownsampleParams_modules: "required environment modules"
+        findDownsampleParams_preDSMultiplier: "Determines target size for pre-downsampled set (if any). Must have (preDSMultiplier) < (minReadsRelative)."
+        findDownsampleParams_precision: "Number of decimal places in fraction for pre-downsampling"
+        findDownsampleParams_minReadsRelative: "Minimum value of (inputReads)/(targetReads) to allow pre-downsampling"
+        findDownsampleParams_minReadsAbsolute: "Minimum value of targetReads to allow pre-downsampling"
+        findDownsampleParams_targetReads: "Desired number of reads in downsampled output"
+        indexBamFile_timeout: "hours before task timeout"
+        indexBamFile_threads: "Requested CPU threads"
+        indexBamFile_jobMemory: "Memory allocated for this job"
+        indexBamFile_modules: "required environment modules"
+        countInputReads_timeout: "hours before task timeout"
+        countInputReads_threads: "Requested CPU threads"
+        countInputReads_jobMemory: "Memory allocated for this job"
+        countInputReads_modules: "required environment modules"
+        updateMetadata_timeout: "hours before task timeout"
+        updateMetadata_threads: "Requested CPU threads"
+        updateMetadata_jobMemory: "Memory allocated for this job"
+        updateMetadata_modules: "required environment modules"
+        filter_timeout: "hours before task timeout"
+        filter_threads: "Requested CPU threads"
+        filter_jobMemory: "Memory allocated for this job"
+        filter_modules: "required environment modules"
+        filter_minQuality: "Minimum alignment quality to pass filter"
     bamFile: "Input BAM file on which to compute QC metrics"
     metadata: "JSON file containing metadata"
     outputFileNamePrefix: "Prefix for output files"
