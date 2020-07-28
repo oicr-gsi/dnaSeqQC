@@ -244,7 +244,7 @@ workflow bamQC {
         bamFile = filter.filteredBam,
         outputFileNamePrefix = outputFileNamePrefix,
         downsampleStatus = findDownsampleParams.status,
-        downsampleTargets = findDownsampleParams.targets,
+        downsampleTargets = findDownsampleParams.targets
     }
     }
 
