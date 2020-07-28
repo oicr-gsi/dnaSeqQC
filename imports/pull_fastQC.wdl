@@ -42,6 +42,20 @@ if (length(inputFastqs) > 1) {
 }
 
 parameter_meta {
+    secondMateZip_timeout: Timeout, in hours, needed to override imposed limits.
+    secondMateZip_jobMemory: Memory allocated to this task.
+    secondMateHtml_timeout: Timeout, in hours, needed to override imposed limits.
+    secondMateHtml_jobMemory: Memory allocated to this task.
+    secondMateFastQC_modules: Names and versions of required modules.
+    secondMateFastQC_timeout: Timeout in hours, needed to override imposed limits.
+    secondMateFastQC_jobMemory: Memory allocated to fastqc.
+    firstMateZip_timeout: Timeout, in hours, needed to override imposed limits.
+    firstMateZip_jobMemory: Memory allocated to this task.
+    firstMateHtml_timeout: Timeout, in hours, needed to override imposed limits.
+    firstMateHtml_jobMemory: Memory allocated to this task.
+    firstMateFastQC_modules: Names and versions of required modules.
+    firstMateFastQC_timeout: Timeout in hours, needed to override imposed limits.
+    firstMateFastQC_jobMemory: Memory allocated to fastqc.
   fastqR1: "Input file with the first mate reads."
   fastqR2: " Input file with the second mate reads (if not set the experiments will be regarded as single-end)."
   outputFileNamePrefix: "Output prefix, customizable. Default is the first file's basename."
