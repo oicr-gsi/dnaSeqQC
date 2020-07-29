@@ -5,8 +5,7 @@ set -o pipefail
 
 cd $1
 
-module load samtools/1.9 2>/dev/null
-find . -regex '.*\.bam$' -exec samtools flagstat {} \;
-find . -regex '.*\.tab$' -exec wc -l {} \;
-find . -regex '.*\.junction$' -exec wc -l {} \;
-ls | sed 's/.*\.//' | sort | uniq -c
+module load jq
+module load python/3.6
+# remove the Picard header because it includes temporary paths
+find . -type f -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys

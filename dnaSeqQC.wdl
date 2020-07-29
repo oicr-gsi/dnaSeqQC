@@ -2,7 +2,6 @@ version 1.0
 
 import "imports/pull_bwaMem.wdl" as bwaMem
 import "imports/pull_bamQC.wdl" as bamQC
-import "imports/pull_fastQC.wdl" as fastQC
 
 workflow dnaSeqQC {
     input {
@@ -24,12 +23,6 @@ workflow dnaSeqQC {
     call bamQC.bamQC {
         input:
             bamFile = bwaMem.bwaMemBam
-    }
-
-    call fastQC.fastQC {
-        input:
-            fastqR1 = fastqR1,
-            fastqR2 = fastqR2
     }
 
     meta {
@@ -79,19 +72,11 @@ workflow dnaSeqQC {
         }
       ]
       output_meta: {
-        html_report_R1: "HTML report for the first mate fastq file.",
-        zip_bundle_R1: "zipped report from FastQC for the first mate reads.",
-        html_report_R2: "HTML report for read second mate fastq file.",
-        zip_bundle_R2: "zipped report from FastQC for the second mate reads.",
         result: "bamQC report"
       }
     }
 
     output {
         File result = bamQC.result
-        File? html_report_R1 = fastQC.html_report_R1
-        File? zip_bundle_R1 = fastQC.zip_bundle_R1
-        File? html_report_R2 = fastQC.html_report_R2
-        File? zip_bundle_R2 = fastQC.zip_bundle_R2
     }
 }

@@ -34,5 +34,5 @@ java -jar $cromwell submit dnaSeqQC.wdl --inputs path/to/test.json --imports imp
 
 8. Generate a new README using generate-markdown-readme.py also found in [gsi-wdl-tools](https://github.com/oicr-gsi/gsi-wdl-tools)
 ```
-python3 path/to/gsi-wdl-tools/generate_markdown_readme.py --input-wdl-path path/to/dnaSeqQC/dnaSeqQC.wdl
+python3 path/to/gsi-wdl-tools/generate_markdown_readme.py --input-wdl-path path/to/dnaSeqQC/dnaSeqQC.wdl > README.md
 ```

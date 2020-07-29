@@ -33,9 +33,7 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-          "dnaSeqQC.fastQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-          "dnaSeqQC.fastQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
         }
       }
     },
@@ -60,9 +58,7 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-          "dnaSeqQC.fastQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-          "dnaSeqQC.fastQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
         }
       }
     },
@@ -88,9 +84,7 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-          "dnaSeqQC.fastQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-          "dnaSeqQC.fastQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
         }
       }
     },
@@ -117,9 +111,7 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-          "dnaSeqQC.fastQC.firstMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8",
-          "dnaSeqQC.fastQC.secondMateFastQC_modules": "perl/5.30 java/8 fastqc/0.11.8"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
         }
       }
     }
