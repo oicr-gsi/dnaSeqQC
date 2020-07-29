@@ -28,7 +28,7 @@ workflow dnaSeqQC {
     meta {
         author: "Fenglin Chen"
         email: "g3chen@oicr.on.ca"
-        description: "Feeds bwaMem into bamQC and fastQC."
+        description: "Calls the bwaMem-bamQC alignment as a single step."
         dependencies: [
         {
             name: "bwa/0.7.12",
@@ -47,10 +47,6 @@ workflow dnaSeqQC {
             url: "https://github.com/OpenGene/slicer/archive/v0.3.0.tar.gz"
         },
         {
-            name: "samtools/1.9",
-            url: "https://github.com/samtools/samtools"
-        },
-        {
             name: "picard/2.21.2",
             url: "https://broadinstitute.github.io/picard/command-line-overview.html"
         },
@@ -62,13 +58,9 @@ workflow dnaSeqQC {
             name: "bam-qc-metrics/0.2.5",
             url: "https://github.com/oicr-gsi/bam-qc-metrics.git"
         },
-            {
+        {
             name: "mosdepth/0.2.9",
             url: "https://github.com/brentp/mosdepth"
-        },
-        {
-            name: "fastqc/0.11.8",
-            url: "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
         }
       ]
       output_meta: {
