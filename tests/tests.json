@@ -15,6 +15,7 @@
     {
       "id": "dnaSeqQC_test_with_downsample",
       "parameters": {
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
@@ -41,6 +42,7 @@
     {
       "id": "dnaSeqQC_test_without_downsample",
       "parameters": {
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
@@ -67,6 +69,7 @@
     {
       "id": "dnaSeqQC_test_CRE",
       "parameters": {
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
@@ -94,6 +97,7 @@
     {
       "id": "dnaSeqQC_test_CRE_custom",
       "parameters": {
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
