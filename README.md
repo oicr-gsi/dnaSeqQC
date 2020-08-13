@@ -153,6 +153,8 @@ Parameter|Value|Default|Description
 
 Output | Type | Description
 ---|---|---
+`log`|File?|None
+`cutAdaptAllLogs`|File?|None
 `result`|File|bamQC report
 
 
