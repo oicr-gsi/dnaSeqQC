@@ -6,8 +6,8 @@ set -o pipefail
 cd $1
 
 # bwaMem
-find . -type f -name "*output.txt" -exec sh -c "wc -l {}" \;
-find . -type f -name "*output.log" -exec sh -c "wc -l {}" \;
+find . -type f -name "*.txt" -exec sh -c "wc -l {}" \;
+find . -type f -name "*.log" -exec sh -c "wc -l {}" \;
 
 # bamQC
 module load jq

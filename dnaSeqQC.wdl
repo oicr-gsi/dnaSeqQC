@@ -7,6 +7,7 @@ workflow dnaSeqQC {
     input {
         File fastqR1
         File fastqR2
+        String? outputFileNamePrefix
     }
 
     parameter_meta {
@@ -17,12 +18,14 @@ workflow dnaSeqQC {
     call bwaMem.bwaMem {
         input:
             fastqR1 = fastqR1,
-            fastqR2 = fastqR2
+            fastqR2 = fastqR2,
+            outputFileNamePrefix = outputFileNamePrefix
     }
 
     call bamQC.bamQC {
         input:
-            bamFile = bwaMem.bwaMemBam
+            bamFile = bwaMem.bwaMemBam,
+            outputFileNamePrefix = outputFileNamePrefix
     }
 
     meta {

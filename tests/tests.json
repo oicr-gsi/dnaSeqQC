@@ -95,10 +95,11 @@
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
-          "dnaSeqQC.bwaMem.outputFileNamePrefix": "121005_h804_0096_AD0V4NACXX_PCSI0022C_NoIndex_L006_001",
+          "dnaSeqQC.outputFileNamePrefix": "CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset",
           "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
           "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
           "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "dnaSeqQC.bwaMem.doTrim": true,
           "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
           "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
           "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": 100000,
