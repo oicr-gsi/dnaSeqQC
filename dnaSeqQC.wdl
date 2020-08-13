@@ -69,6 +69,11 @@ workflow dnaSeqQC {
     }
 
     output {
+    	# bwaMem outputs
+        File? log = bwaMem.log
+        File? cutAdaptAllLogs = bwaMem.cutAdaptAllLogs
+
+        # bamQC outputs
         File result = bamQC.result
     }
 }
