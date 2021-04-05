@@ -73,7 +73,7 @@ Parameter|Value|Default|Description
 `bwaMem.countChunkSize_jobMemory`|Int|16|Memory allocated for this job
 `bwaMem.outputFileNamePrefix`|String|"output"|Prefix for output file
 `bwaMem.numChunk`|Int|1|number of chunks to split fastq file [1, no splitting]
-`bwaMem.doTrim`|Boolean|false|if true, adapters will be trimmed before alignment
+`bwaMem.doTrim`|Boolean|true|if true, adapters will be trimmed before alignment
 `bwaMem.trimMinLength`|Int|1|minimum length of reads to keep [1]
 `bwaMem.trimMinQuality`|Int|0|minimum quality of read ends to keep [0]
 `bwaMem.adapter1`|String|"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC"|adapter sequence to trim from read 1 [AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC]
