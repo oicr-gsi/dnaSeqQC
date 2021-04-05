@@ -33,7 +33,7 @@ workflow bwaMem {
         String readGroups
         String outputFileNamePrefix = "output"
         Int numChunk = 1
-        Boolean doTrim = false
+        Boolean doTrim = true
         Int trimMinLength = 1
         Int trimMinQuality = 0
         String adapter1 = "AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC"

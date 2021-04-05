@@ -15,7 +15,7 @@
     {
       "id": "dnaSeqQC_test_with_downsample",
       "parameters": {
-        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.1.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
@@ -23,6 +23,7 @@
           "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
           "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
           "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "dnaSeqQC.bwaMem.doTrim": "false",
           "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
           "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 20000,
           "dnaSeqQC.bamQC.metadata": {
@@ -40,7 +41,7 @@
     {
       "id": "dnaSeqQC_test_without_downsample",
       "parameters": {
-        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.1.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
@@ -48,6 +49,7 @@
           "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
           "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
           "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "dnaSeqQC.bwaMem.doTrim": "false",
           "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
           "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
           "dnaSeqQC.bamQC.metadata": {
@@ -65,7 +67,7 @@
     {
       "id": "dnaSeqQC_test_CRE",
       "parameters": {
-        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.1.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
@@ -73,6 +75,7 @@
           "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
           "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
           "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+          "dnaSeqQC.bwaMem.doTrim": "false",
           "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
           "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
           "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": 100000,
@@ -91,7 +94,7 @@
     {
       "id": "dnaSeqQC_test_CRE_custom",
       "parameters": {
-        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.0.0/lib/imports.zip",
+        "wdl_deps_zip": "${workflow_bundle_dir}/Workflow_Bundle_dnaSeqQC/1.1.0/lib/imports.zip",
         "wdl_inputs": {
           "dnaSeqQC.fastqR1": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
           "dnaSeqQC.fastqR2": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
@@ -99,7 +102,6 @@
           "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
           "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
           "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
-          "dnaSeqQC.bwaMem.doTrim": true,
           "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
           "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
           "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": 100000,

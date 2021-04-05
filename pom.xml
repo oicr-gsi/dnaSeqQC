@@ -5,11 +5,11 @@
   <parent>
     <groupId>ca.on.oicr.gsi</groupId>
     <artifactId>pipedev-niassa-cromwell-parent</artifactId>
-    <version>2.5.15</version>
+    <version>2.5.17</version>
     <relativePath/>
   </parent>
   <artifactId>dnaSeqQC</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <properties>
     <workflow-description>Calls the bwaMem-bamQC alignment as a single step.</workflow-description>
     <wdl-workflow>dnaSeqQC.wdl</wdl-workflow>
