@@ -14,6 +14,8 @@ Calls the bwaMem-bamQC alignment as a single step.
 * [python 3.6](https://www.python.org/downloads/)
 * [bam-qc-metrics 0.2.5](https://github.com/oicr-gsi/bam-qc-metrics.git)
 * [mosdepth 0.2.9](https://github.com/brentp/mosdepth)
+* [gatk 4.1.7.0, gatk 3.6.0](https://gatk.broadinstitute.org)
+* [tabix 0.2.6](http://www.htslib.org)
 
 
 ## Usage
@@ -37,11 +39,17 @@ Parameter|Value|Description
 `bamQC.bamQCMetrics_refSizesBed`|String|Path to human genome BED reference with chromosome sizes
 `bamQC.bamQCMetrics_refFasta`|String|Path to human genome FASTA reference
 `bamQC.metadata`|Map[String,String]|JSON file containing metadata
+`fingerprintCollector.runFinCreator_modules`|String|Names and versions of modules
+`fingerprintCollector.runDepthOfCoverage_modules`|String|Names and versions of modules
+`fingerprintCollector.runHaplotypeCaller_modules`|String|Names and versions of modules
+`fingerprintCollector.refFasta`|String|Path to the reference fasta file
+`fingerprintCollector.hotspotSNPs`|String|Path to the gzipped hotspot vcf file
 
 
 #### Optional workflow parameters:
 Parameter|Value|Default|Description
 ---|---|---|---
+`outputFileNamePrefix`|String|basename(fastqR1)|Optional output prefix for the output
 
 
 #### Optional task parameters:
@@ -71,7 +79,6 @@ Parameter|Value|Default|Description
 `bwaMem.slicerR1_modules`|String|"slicer/0.3.0"|Required environment modules
 `bwaMem.countChunkSize_timeout`|Int|48|Hours before task timeout
 `bwaMem.countChunkSize_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.outputFileNamePrefix`|String|"output"|Prefix for output file
 `bwaMem.numChunk`|Int|1|number of chunks to split fastq file [1, no splitting]
 `bwaMem.doTrim`|Boolean|true|if true, adapters will be trimmed before alignment
 `bwaMem.trimMinLength`|Int|1|minimum length of reads to keep [1]
@@ -146,16 +153,26 @@ Parameter|Value|Default|Description
 `bamQC.filter_jobMemory`|Int|16|Memory allocated for this job
 `bamQC.filter_modules`|String|"samtools/1.9"|required environment modules
 `bamQC.filter_minQuality`|Int|30|Minimum alignment quality to pass filter
-`bamQC.outputFileNamePrefix`|String|"bamQC"|Prefix for output files
+`inputJoiner.jobMemory`|Int|8|memory allocated to the job
+`fingerprintCollector.runFinCreator_jobMemory`|Int|8|memory allocated for Job
+`fingerprintCollector.runFinCreator_timeout`|Int|10|Timeout in hours, needed to override imposed limits
+`fingerprintCollector.runFinCreator_chroms`|Array[String]|["chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chr21", "chr22", "chrX"]|Canonical chromosomes in desired order (used for soting lines in .fin file)
+`fingerprintCollector.runDepthOfCoverage_timeout`|Int|24|Timeout in hours, needed to override imposed limits
+`fingerprintCollector.runDepthOfCoverage_jobMemory`|Int|8|memory allocated for Job
+`fingerprintCollector.runHaplotypeCaller_stdCC`|Float|30.0|standard call confidence score, default is 30
+`fingerprintCollector.runHaplotypeCaller_timeout`|Int|24|Timeout in hours, needed to override imposed limits
+`fingerprintCollector.runHaplotypeCaller_jobMemory`|Int|8|memory allocated for Job
+`fingerprintCollector.outputFileNamePrefix`|String|basename(inputBam,".bam")|Output prefix, customizable. Default is the input file's basename.
 
 
 ### Outputs
 
 Output | Type | Description
 ---|---|---
-`log`|File?|None
-`cutAdaptAllLogs`|File?|None
+`log`|File?|log file for bwaMem task
+`cutAdaptAllLogs`|File?|log file for cutadapt task
 `result`|File|bamQC report
+`finFile`|File|fingerprintCollector fin file
 
 
 ## Niassa + Cromwell

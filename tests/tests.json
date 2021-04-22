@@ -34,7 +34,12 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "dnaSeqQC.fingerprintCollector.hotspotSNPs": "/.mounts/labs/gsi/testdata/fingerprintCollector/dbsnp137.hg19.402.overlap.vcf.gz",
+          "dnaSeqQC.fingerprintCollector.refFasta": "$HG19_ROOT/hg19_random.fa",
+          "dnaSeqQC.fingerprintCollector.runHaplotypeCaller_modules": "hg19/p13 gatk/4.1.7.0 tabix/0.2.6",
+          "dnaSeqQC.fingerprintCollector.runDepthOfCoverage_modules": "hg19/p13 gatk/3.6-0",
+          "dnaSeqQC.fingerprintCollector.runFinCreator_modules": "python/3.6"
         }
       }
     },
@@ -60,7 +65,12 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "dnaSeqQC.fingerprintCollector.hotspotSNPs": "/.mounts/labs/gsi/testdata/fingerprintCollector/dbsnp137.hg19.402.overlap.vcf.gz",
+          "dnaSeqQC.fingerprintCollector.refFasta": "$HG19_ROOT/hg19_random.fa",
+          "dnaSeqQC.fingerprintCollector.runHaplotypeCaller_modules": "hg19/p13 gatk/4.1.7.0 tabix/0.2.6",
+          "dnaSeqQC.fingerprintCollector.runDepthOfCoverage_modules": "hg19/p13 gatk/3.6-0",
+          "dnaSeqQC.fingerprintCollector.runFinCreator_modules": "python/3.6"
         }
       }
     },
@@ -87,7 +97,12 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "dnaSeqQC.fingerprintCollector.hotspotSNPs": "/.mounts/labs/gsi/testdata/fingerprintCollector/dbsnp137.hg19.402.overlap.vcf.gz",
+          "dnaSeqQC.fingerprintCollector.refFasta": "$HG19_ROOT/hg19_random.fa",
+          "dnaSeqQC.fingerprintCollector.runHaplotypeCaller_modules": "hg19/p13 gatk/4.1.7.0 tabix/0.2.6",
+          "dnaSeqQC.fingerprintCollector.runDepthOfCoverage_modules": "hg19/p13 gatk/3.6-0",
+          "dnaSeqQC.fingerprintCollector.runFinCreator_modules": "python/3.6"
         }
       }
     },
@@ -114,7 +129,12 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+          "dnaSeqQC.fingerprintCollector.hotspotSNPs": "/.mounts/labs/gsi/testdata/fingerprintCollector/dbsnp137.hg19.402.overlap.vcf.gz",
+          "dnaSeqQC.fingerprintCollector.refFasta": "$HG19_ROOT/hg19_random.fa",
+          "dnaSeqQC.fingerprintCollector.runHaplotypeCaller_modules": "hg19/p13 gatk/4.1.7.0 tabix/0.2.6",
+          "dnaSeqQC.fingerprintCollector.runDepthOfCoverage_modules": "hg19/p13 gatk/3.6-0",
+          "dnaSeqQC.fingerprintCollector.runFinCreator_modules": "python/3.6"
         }
       }
     }
