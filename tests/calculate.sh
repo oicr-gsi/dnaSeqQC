@@ -16,4 +16,4 @@ module load python/3.6
 find . -type f -name "*.json" -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys
 
 #fingerprintCollector
-find . -type f -name "*.fin" -exec wc -l {} 
+find . -type f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'
