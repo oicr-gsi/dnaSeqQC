@@ -89,8 +89,8 @@ workflow dnaSeqQC {
         }
       ]
       output_meta: {
-        log: "log file for bwaMem task"
-        cutAdaptAllLogs: "log file for cutadapt task"
+        log: "log file for bwaMem task",
+        cutAdaptAllLogs: "log file for cutadapt task",
         result: "bamQC report",
         finFile: "fingerprintCollector fin file"
       }
