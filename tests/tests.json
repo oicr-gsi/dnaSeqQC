@@ -60,8 +60,7 @@
             "tissue type": "Claw fragment"
           },
           "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
-          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
-          "dnaSeqQC.fingerprintCollector.hotspotSNPs": "/.mounts/labs/gsi/testdata/fingerprintCollector/dbsnp137.hg19.402.overlap.vcf.gz"
+          "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed"
         }
       }
     },
