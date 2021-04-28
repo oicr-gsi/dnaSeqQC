@@ -9,7 +9,7 @@
     <relativePath/>
   </parent>
   <artifactId>dnaSeqQC</artifactId>
-  <version>1.1.0</version>
+  <version>1.0.1</version>
   <properties>
     <workflow-description>Calls the bwaMem-bamQC alignment as a single step.</workflow-description>
     <wdl-workflow>dnaSeqQC.wdl</wdl-workflow>
