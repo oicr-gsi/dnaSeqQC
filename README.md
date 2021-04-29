@@ -42,6 +42,7 @@ Parameter|Value|Description
 #### Optional workflow parameters:
 Parameter|Value|Default|Description
 ---|---|---|---
+`outputFileNamePrefix`|String|basename(fastqR1)|Optional output prefix for the output
 
 
 #### Optional task parameters:
@@ -71,7 +72,6 @@ Parameter|Value|Default|Description
 `bwaMem.slicerR1_modules`|String|"slicer/0.3.0"|Required environment modules
 `bwaMem.countChunkSize_timeout`|Int|48|Hours before task timeout
 `bwaMem.countChunkSize_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.outputFileNamePrefix`|String|"output"|Prefix for output file
 `bwaMem.numChunk`|Int|1|number of chunks to split fastq file [1, no splitting]
 `bwaMem.doTrim`|Boolean|true|if true, adapters will be trimmed before alignment
 `bwaMem.trimMinLength`|Int|1|minimum length of reads to keep [1]
@@ -146,15 +146,14 @@ Parameter|Value|Default|Description
 `bamQC.filter_jobMemory`|Int|16|Memory allocated for this job
 `bamQC.filter_modules`|String|"samtools/1.9"|required environment modules
 `bamQC.filter_minQuality`|Int|30|Minimum alignment quality to pass filter
-`bamQC.outputFileNamePrefix`|String|"bamQC"|Prefix for output files
 
 
 ### Outputs
 
 Output | Type | Description
 ---|---|---
-`log`|File?|None
-`cutAdaptAllLogs`|File?|None
+`log`|File?|log file for bwaMem task
+`cutAdaptAllLogs`|File?|log file for cutadapt task
 `result`|File|bamQC report
 
 

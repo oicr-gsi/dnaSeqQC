@@ -7,12 +7,13 @@ workflow dnaSeqQC {
     input {
         File fastqR1
         File fastqR2
-        String? outputFileNamePrefix
+        String outputFileNamePrefix = basename(fastqR1)
     }
 
     parameter_meta {
         fastqR1: "fastq file for read 1"
         fastqR2: "fastq file for read 2"
+        outputFileNamePrefix: "Optional output prefix for the output"
     }
 
     call bwaMem.bwaMem {
@@ -67,16 +68,21 @@ workflow dnaSeqQC {
         }
       ]
       output_meta: {
+        log: "log file for bwaMem task",
+        cutAdaptAllLogs: "log file for cutadapt task",
         result: "bamQC report"
       }
     }
 
-    output {
-    	# bwaMem outputs
-        File? log = bwaMem.log
-        File? cutAdaptAllLogs = bwaMem.cutAdaptAllLogs
+ 
 
-        # bamQC outputs
-        File result = bamQC.result
-    }
+  output {
+     # bwaMem outputs
+     File? log = bwaMem.log
+     File? cutAdaptAllLogs = bwaMem.cutAdaptAllLogs
+
+     # bamQC outputs
+     File result = bamQC.result
+  }
 }
+

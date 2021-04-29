@@ -15,3 +15,5 @@ module load python/3.6
 # remove the Picard header because it includes temporary paths
 find . -type f -name "*.json" -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys
 
+#fingerprintCollector
+find . -type f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'
