@@ -1,6 +1,6 @@
 # dnaSeqQC
 
-Calls the bwaMem-bamQC alignment as a single step.
+Calls the bwaMem, bamQC as a tandem without provisioning the bam file.
 
 ## Overview
 

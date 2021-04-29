@@ -43,9 +43,9 @@ workflow dnaSeqQC {
     }
 
     meta {
-        author: "Fenglin Chen"
-        email: "g3chen@oicr.on.ca"
-        description: "Calls the bwaMem-bamQC alignment as a single step."
+        author: "Fenglin Chen, Peter Ruzanov"
+        email: "g3chen@oicr.on.ca, pruzanov@oicr.on.ca"
+        description: "Calls the bwaMem, bamQC as a tandem without provisioning the bam file."
         dependencies: [
         {
             name: "bwa/0.7.12",
