@@ -1,0 +1,6 @@
+{
+    "names": [
+        "dnaSeqQC"
+    ],
+    "wdl": "dnaSeqQC.wdl"
+}
