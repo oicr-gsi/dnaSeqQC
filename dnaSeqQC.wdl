@@ -1,7 +1,7 @@
 version 1.0
 
-import "pull_bwaMem.wdl" as bwaMem
-import "pull_bamQC.wdl" as bamQC
+import "imports/pull_bwaMem.wdl" as bwaMem
+import "imports/pull_bamQC.wdl" as bamQC
 
 workflow dnaSeqQC {
     input {
