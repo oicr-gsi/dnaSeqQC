@@ -15,4 +15,4 @@ module load jq
 find . -xtype f -name "*.json" -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys
 
 #fingerprintCollector
-find . -xtype f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'
+#find . -xtype f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'

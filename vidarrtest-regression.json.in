@@ -136,7 +136,7 @@
                 },
                 "type": "EXTERNAL"
             },
-            "dnaSeqQC.outputFileNamePrefix": "neat_5x_EX_hg19_chr21_R1"
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_with_downsample"
         },
         "description": "dnaSeqQC workflow test",
         "engineArguments": {},
@@ -313,7 +313,7 @@
                 },
                 "type": "EXTERNAL"
             },
-            "dnaSeqQC.outputFileNamePrefix": "neat_5x_EX_hg19_chr21"
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_without_downsample"
         },
         "description": "dnaSeqQC workflow test",
         "engineArguments": {},
@@ -490,7 +490,7 @@
                 },
                 "type": "EXTERNAL"
             },
-            "dnaSeqQC.outputFileNamePrefix": "CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset"
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE"
         },
         "description": "dnaSeqQC workflow test",
         "engineArguments": {},
@@ -667,7 +667,7 @@
                 },
                 "type": "EXTERNAL"
             },
-            "dnaSeqQC.outputFileNamePrefix": "CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset"
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE_custom"
         },
         "description": "dnaSeqQC workflow test",
         "engineArguments": {},
