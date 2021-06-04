@@ -6,14 +6,13 @@ set -o pipefail
 cd $1
 
 # bwaMem
-find . -type f -name "*.txt" -exec sh -c "wc -l {}" \;
-find . -type f -name "*.log" -exec sh -c "wc -l {}" \;
+#find . -xtype f -name "*.txt" -exec sh -c "wc -l {}" \;
+#find . -xtype f -name "*.log" -exec sh -c "wc -l {}" \;
 
 # bamQC
 module load jq
-module load python/3.6
 # remove the Picard header because it includes temporary paths
-find . -type f -name "*.json" -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys
+find . -xtype f -name "*.json" -exec jq 'del(.picard | .header)' {} \; | python3 -mjson.tool --sort-keys
 
 #fingerprintCollector
-find . -type f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'
+#find . -xtype f -name "*.fin" -execdir wc -l {} \; | sed 's/ .*//'

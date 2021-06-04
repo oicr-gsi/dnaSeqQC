@@ -1,0 +1,710 @@
+[
+    {
+        "arguments": {
+            "dnaSeqQC.bamQC.bamQCMetrics_jobMemory": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_modules": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_normalInsertMax": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+            "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+            "dnaSeqQC.bamQC.bamQCMetrics_threads": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_timeout": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+            "dnaSeqQC.bamQC.collateResults_jobMemory": null,
+            "dnaSeqQC.bamQC.collateResults_modules": null,
+            "dnaSeqQC.bamQC.collateResults_threads": null,
+            "dnaSeqQC.bamQC.collateResults_timeout": null,
+            "dnaSeqQC.bamQC.countInputReads_jobMemory": null,
+            "dnaSeqQC.bamQC.countInputReads_modules": null,
+            "dnaSeqQC.bamQC.countInputReads_threads": null,
+            "dnaSeqQC.bamQC.countInputReads_timeout": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_jobMemory": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_modules": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_threads": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_timeout": null,
+            "dnaSeqQC.bamQC.downsampleRegion_jobMemory": null,
+            "dnaSeqQC.bamQC.downsampleRegion_modules": null,
+            "dnaSeqQC.bamQC.downsampleRegion_threads": null,
+            "dnaSeqQC.bamQC.downsampleRegion_timeout": null,
+            "dnaSeqQC.bamQC.downsample_downsampleSuffix": null,
+            "dnaSeqQC.bamQC.downsample_jobMemory": null,
+            "dnaSeqQC.bamQC.downsample_modules": null,
+            "dnaSeqQC.bamQC.downsample_randomSeed": null,
+            "dnaSeqQC.bamQC.downsample_threads": null,
+            "dnaSeqQC.bamQC.downsample_timeout": null,
+            "dnaSeqQC.bamQC.filter_jobMemory": null,
+            "dnaSeqQC.bamQC.filter_minQuality": null,
+            "dnaSeqQC.bamQC.filter_modules": null,
+            "dnaSeqQC.bamQC.filter_threads": null,
+            "dnaSeqQC.bamQC.filter_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_baseInterval": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_chromosomes": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_customRegions": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_intervalStart": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsAbsolute": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsRelative": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_preDSMultiplier": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_precision": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 20000,
+            "dnaSeqQC.bamQC.findDownsampleParams_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_timeout": null,
+            "dnaSeqQC.bamQC.indexBamFile_jobMemory": null,
+            "dnaSeqQC.bamQC.indexBamFile_modules": null,
+            "dnaSeqQC.bamQC.indexBamFile_threads": null,
+            "dnaSeqQC.bamQC.indexBamFile_timeout": null,
+            "dnaSeqQC.bamQC.markDuplicates_jobMemory": null,
+            "dnaSeqQC.bamQC.markDuplicates_modules": null,
+            "dnaSeqQC.bamQC.markDuplicates_opticalDuplicatePixelDistance": null,
+            "dnaSeqQC.bamQC.markDuplicates_picardMaxMemMb": null,
+            "dnaSeqQC.bamQC.markDuplicates_threads": null,
+            "dnaSeqQC.bamQC.markDuplicates_timeout": null,
+            "dnaSeqQC.bamQC.metadata": {
+                "donor": "Xenomorph",
+                "group id": "Weyland-Yutani",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
+                "tissue type": "Claw fragment"
+            },
+            "dnaSeqQC.bamQC.runMosdepth_jobMemory": null,
+            "dnaSeqQC.bamQC.runMosdepth_modules": null,
+            "dnaSeqQC.bamQC.runMosdepth_threads": null,
+            "dnaSeqQC.bamQC.runMosdepth_timeout": null,
+            "dnaSeqQC.bamQC.updateMetadata_jobMemory": null,
+            "dnaSeqQC.bamQC.updateMetadata_modules": null,
+            "dnaSeqQC.bamQC.updateMetadata_threads": null,
+            "dnaSeqQC.bamQC.updateMetadata_timeout": null,
+            "dnaSeqQC.bwaMem.adapter1": null,
+            "dnaSeqQC.bwaMem.adapter2": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_timeout": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_addParam": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_modules": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_timeout": null,
+            "dnaSeqQC.bwaMem.bamMerge_jobMemory": null,
+            "dnaSeqQC.bwaMem.bamMerge_modules": null,
+            "dnaSeqQC.bwaMem.bamMerge_timeout": null,
+            "dnaSeqQC.bwaMem.countChunkSize_jobMemory": null,
+            "dnaSeqQC.bwaMem.countChunkSize_timeout": null,
+            "dnaSeqQC.bwaMem.doTrim": true,
+            "dnaSeqQC.bwaMem.indexBam_jobMemory": null,
+            "dnaSeqQC.bwaMem.indexBam_modules": null,
+            "dnaSeqQC.bwaMem.indexBam_timeout": null,
+            "dnaSeqQC.bwaMem.numChunk": null,
+            "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
+            "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
+            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_threads": null,
+            "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR1_modules": null,
+            "dnaSeqQC.bwaMem.slicerR1_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR2_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR2_modules": null,
+            "dnaSeqQC.bwaMem.slicerR2_timeout": null,
+            "dnaSeqQC.bwaMem.trimMinLength": null,
+            "dnaSeqQC.bwaMem.trimMinQuality": null,
+            "dnaSeqQC.fastqR1": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.fastqR2": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_with_downsample"
+        },
+        "description": "dnaSeqQC workflow test",
+        "engineArguments": {},
+        "id": "dnaSeqQC_test_with_downsample",
+        "metadata": {
+            "dnaSeqQC.cutAdaptAllLogs": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_with_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.log": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_with_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.result": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_with_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.0.1/dnaSeqQC_test_with_downsample.metrics",
+                "type": "script"
+            }
+        ]
+    },
+    {
+        "arguments": {
+            "dnaSeqQC.bamQC.bamQCMetrics_jobMemory": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_modules": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_normalInsertMax": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+            "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+            "dnaSeqQC.bamQC.bamQCMetrics_threads": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_timeout": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+            "dnaSeqQC.bamQC.collateResults_jobMemory": null,
+            "dnaSeqQC.bamQC.collateResults_modules": null,
+            "dnaSeqQC.bamQC.collateResults_threads": null,
+            "dnaSeqQC.bamQC.collateResults_timeout": null,
+            "dnaSeqQC.bamQC.countInputReads_jobMemory": null,
+            "dnaSeqQC.bamQC.countInputReads_modules": null,
+            "dnaSeqQC.bamQC.countInputReads_threads": null,
+            "dnaSeqQC.bamQC.countInputReads_timeout": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_jobMemory": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_modules": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_threads": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_timeout": null,
+            "dnaSeqQC.bamQC.downsampleRegion_jobMemory": null,
+            "dnaSeqQC.bamQC.downsampleRegion_modules": null,
+            "dnaSeqQC.bamQC.downsampleRegion_threads": null,
+            "dnaSeqQC.bamQC.downsampleRegion_timeout": null,
+            "dnaSeqQC.bamQC.downsample_downsampleSuffix": null,
+            "dnaSeqQC.bamQC.downsample_jobMemory": null,
+            "dnaSeqQC.bamQC.downsample_modules": null,
+            "dnaSeqQC.bamQC.downsample_randomSeed": null,
+            "dnaSeqQC.bamQC.downsample_threads": null,
+            "dnaSeqQC.bamQC.downsample_timeout": null,
+            "dnaSeqQC.bamQC.filter_jobMemory": null,
+            "dnaSeqQC.bamQC.filter_minQuality": null,
+            "dnaSeqQC.bamQC.filter_modules": null,
+            "dnaSeqQC.bamQC.filter_threads": null,
+            "dnaSeqQC.bamQC.filter_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_baseInterval": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_chromosomes": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_customRegions": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_intervalStart": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsAbsolute": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsRelative": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_preDSMultiplier": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_precision": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
+            "dnaSeqQC.bamQC.findDownsampleParams_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_timeout": null,
+            "dnaSeqQC.bamQC.indexBamFile_jobMemory": null,
+            "dnaSeqQC.bamQC.indexBamFile_modules": null,
+            "dnaSeqQC.bamQC.indexBamFile_threads": null,
+            "dnaSeqQC.bamQC.indexBamFile_timeout": null,
+            "dnaSeqQC.bamQC.markDuplicates_jobMemory": null,
+            "dnaSeqQC.bamQC.markDuplicates_modules": null,
+            "dnaSeqQC.bamQC.markDuplicates_opticalDuplicatePixelDistance": null,
+            "dnaSeqQC.bamQC.markDuplicates_picardMaxMemMb": null,
+            "dnaSeqQC.bamQC.markDuplicates_threads": null,
+            "dnaSeqQC.bamQC.markDuplicates_timeout": null,
+            "dnaSeqQC.bamQC.metadata": {
+                "donor": "Xenomorph",
+                "group id": "Weyland-Yutani",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
+                "tissue type": "Claw fragment"
+            },
+            "dnaSeqQC.bamQC.runMosdepth_jobMemory": null,
+            "dnaSeqQC.bamQC.runMosdepth_modules": null,
+            "dnaSeqQC.bamQC.runMosdepth_threads": null,
+            "dnaSeqQC.bamQC.runMosdepth_timeout": null,
+            "dnaSeqQC.bamQC.updateMetadata_jobMemory": null,
+            "dnaSeqQC.bamQC.updateMetadata_modules": null,
+            "dnaSeqQC.bamQC.updateMetadata_threads": null,
+            "dnaSeqQC.bamQC.updateMetadata_timeout": null,
+            "dnaSeqQC.bwaMem.adapter1": null,
+            "dnaSeqQC.bwaMem.adapter2": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_timeout": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_addParam": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_modules": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_timeout": null,
+            "dnaSeqQC.bwaMem.bamMerge_jobMemory": null,
+            "dnaSeqQC.bwaMem.bamMerge_modules": null,
+            "dnaSeqQC.bwaMem.bamMerge_timeout": null,
+            "dnaSeqQC.bwaMem.countChunkSize_jobMemory": null,
+            "dnaSeqQC.bwaMem.countChunkSize_timeout": null,
+            "dnaSeqQC.bwaMem.doTrim": true,
+            "dnaSeqQC.bwaMem.indexBam_jobMemory": null,
+            "dnaSeqQC.bwaMem.indexBam_modules": null,
+            "dnaSeqQC.bwaMem.indexBam_timeout": null,
+            "dnaSeqQC.bwaMem.numChunk": null,
+            "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
+            "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
+            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_threads": null,
+            "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR1_modules": null,
+            "dnaSeqQC.bwaMem.slicerR1_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR2_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR2_modules": null,
+            "dnaSeqQC.bwaMem.slicerR2_timeout": null,
+            "dnaSeqQC.bwaMem.trimMinLength": null,
+            "dnaSeqQC.bwaMem.trimMinQuality": null,
+            "dnaSeqQC.fastqR1": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.fastqR2": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_without_downsample"
+        },
+        "description": "dnaSeqQC workflow test",
+        "engineArguments": {},
+        "id": "dnaSeqQC_test_without_downsample",
+        "metadata": {
+            "dnaSeqQC.cutAdaptAllLogs": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_without_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.log": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_without_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.result": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_without_downsample_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.0.1/dnaSeqQC_test_without_downsample.metrics",
+                "type": "script"
+            }
+        ]
+    },
+    {
+        "arguments": {
+            "dnaSeqQC.bamQC.bamQCMetrics_jobMemory": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_modules": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_normalInsertMax": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+            "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+            "dnaSeqQC.bamQC.bamQCMetrics_threads": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_timeout": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+            "dnaSeqQC.bamQC.collateResults_jobMemory": null,
+            "dnaSeqQC.bamQC.collateResults_modules": null,
+            "dnaSeqQC.bamQC.collateResults_threads": null,
+            "dnaSeqQC.bamQC.collateResults_timeout": null,
+            "dnaSeqQC.bamQC.countInputReads_jobMemory": null,
+            "dnaSeqQC.bamQC.countInputReads_modules": null,
+            "dnaSeqQC.bamQC.countInputReads_threads": null,
+            "dnaSeqQC.bamQC.countInputReads_timeout": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_jobMemory": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_modules": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_threads": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_timeout": null,
+            "dnaSeqQC.bamQC.downsampleRegion_jobMemory": null,
+            "dnaSeqQC.bamQC.downsampleRegion_modules": null,
+            "dnaSeqQC.bamQC.downsampleRegion_threads": null,
+            "dnaSeqQC.bamQC.downsampleRegion_timeout": null,
+            "dnaSeqQC.bamQC.downsample_downsampleSuffix": null,
+            "dnaSeqQC.bamQC.downsample_jobMemory": null,
+            "dnaSeqQC.bamQC.downsample_modules": null,
+            "dnaSeqQC.bamQC.downsample_randomSeed": null,
+            "dnaSeqQC.bamQC.downsample_threads": null,
+            "dnaSeqQC.bamQC.downsample_timeout": null,
+            "dnaSeqQC.bamQC.filter_jobMemory": null,
+            "dnaSeqQC.bamQC.filter_minQuality": null,
+            "dnaSeqQC.bamQC.filter_modules": null,
+            "dnaSeqQC.bamQC.filter_threads": null,
+            "dnaSeqQC.bamQC.filter_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_baseInterval": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_chromosomes": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_customRegions": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_intervalStart": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": 100000,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsAbsolute": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsRelative": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_preDSMultiplier": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_precision": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
+            "dnaSeqQC.bamQC.findDownsampleParams_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_timeout": null,
+            "dnaSeqQC.bamQC.indexBamFile_jobMemory": null,
+            "dnaSeqQC.bamQC.indexBamFile_modules": null,
+            "dnaSeqQC.bamQC.indexBamFile_threads": null,
+            "dnaSeqQC.bamQC.indexBamFile_timeout": null,
+            "dnaSeqQC.bamQC.markDuplicates_jobMemory": null,
+            "dnaSeqQC.bamQC.markDuplicates_modules": null,
+            "dnaSeqQC.bamQC.markDuplicates_opticalDuplicatePixelDistance": null,
+            "dnaSeqQC.bamQC.markDuplicates_picardMaxMemMb": null,
+            "dnaSeqQC.bamQC.markDuplicates_threads": null,
+            "dnaSeqQC.bamQC.markDuplicates_timeout": null,
+            "dnaSeqQC.bamQC.metadata": {
+                "donor": "Xenomorph",
+                "group id": "Weyland-Yutani",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
+                "tissue type": "Claw fragment"
+            },
+            "dnaSeqQC.bamQC.runMosdepth_jobMemory": null,
+            "dnaSeqQC.bamQC.runMosdepth_modules": null,
+            "dnaSeqQC.bamQC.runMosdepth_threads": null,
+            "dnaSeqQC.bamQC.runMosdepth_timeout": null,
+            "dnaSeqQC.bamQC.updateMetadata_jobMemory": null,
+            "dnaSeqQC.bamQC.updateMetadata_modules": null,
+            "dnaSeqQC.bamQC.updateMetadata_threads": null,
+            "dnaSeqQC.bamQC.updateMetadata_timeout": null,
+            "dnaSeqQC.bwaMem.adapter1": null,
+            "dnaSeqQC.bwaMem.adapter2": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_timeout": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_addParam": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_modules": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_timeout": null,
+            "dnaSeqQC.bwaMem.bamMerge_jobMemory": null,
+            "dnaSeqQC.bwaMem.bamMerge_modules": null,
+            "dnaSeqQC.bwaMem.bamMerge_timeout": null,
+            "dnaSeqQC.bwaMem.countChunkSize_jobMemory": null,
+            "dnaSeqQC.bwaMem.countChunkSize_timeout": null,
+            "dnaSeqQC.bwaMem.doTrim": true,
+            "dnaSeqQC.bwaMem.indexBam_jobMemory": null,
+            "dnaSeqQC.bwaMem.indexBam_modules": null,
+            "dnaSeqQC.bwaMem.indexBam_timeout": null,
+            "dnaSeqQC.bwaMem.numChunk": null,
+            "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
+            "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
+            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_threads": null,
+            "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR1_modules": null,
+            "dnaSeqQC.bwaMem.slicerR1_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR2_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR2_modules": null,
+            "dnaSeqQC.bwaMem.slicerR2_timeout": null,
+            "dnaSeqQC.bwaMem.trimMinLength": null,
+            "dnaSeqQC.bwaMem.trimMinQuality": null,
+            "dnaSeqQC.fastqR1": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.fastqR2": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE"
+        },
+        "description": "dnaSeqQC workflow test",
+        "engineArguments": {},
+        "id": "dnaSeqQC_test_CRE",
+        "metadata": {
+            "dnaSeqQC.cutAdaptAllLogs": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.log": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.result": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.0.1/dnaSeqQC_test_CRE.metrics",
+                "type": "script"
+            }
+        ]
+    },
+    {
+        "arguments": {
+            "dnaSeqQC.bamQC.bamQCMetrics_jobMemory": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_modules": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_normalInsertMax": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_refFasta": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19_random.fa",
+            "dnaSeqQC.bamQC.bamQCMetrics_refSizesBed": "/.mounts/labs/gsi/modulator/sw/data/hg19-p13/hg19.chrom.sizes.bed",
+            "dnaSeqQC.bamQC.bamQCMetrics_threads": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_timeout": null,
+            "dnaSeqQC.bamQC.bamQCMetrics_workflowVersion": "4.0.0_TEST",
+            "dnaSeqQC.bamQC.collateResults_jobMemory": null,
+            "dnaSeqQC.bamQC.collateResults_modules": null,
+            "dnaSeqQC.bamQC.collateResults_threads": null,
+            "dnaSeqQC.bamQC.collateResults_timeout": null,
+            "dnaSeqQC.bamQC.countInputReads_jobMemory": null,
+            "dnaSeqQC.bamQC.countInputReads_modules": null,
+            "dnaSeqQC.bamQC.countInputReads_threads": null,
+            "dnaSeqQC.bamQC.countInputReads_timeout": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_jobMemory": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_modules": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_threads": null,
+            "dnaSeqQC.bamQC.cumulativeDistToHistogram_timeout": null,
+            "dnaSeqQC.bamQC.downsampleRegion_jobMemory": null,
+            "dnaSeqQC.bamQC.downsampleRegion_modules": null,
+            "dnaSeqQC.bamQC.downsampleRegion_threads": null,
+            "dnaSeqQC.bamQC.downsampleRegion_timeout": null,
+            "dnaSeqQC.bamQC.downsample_downsampleSuffix": null,
+            "dnaSeqQC.bamQC.downsample_jobMemory": null,
+            "dnaSeqQC.bamQC.downsample_modules": null,
+            "dnaSeqQC.bamQC.downsample_randomSeed": null,
+            "dnaSeqQC.bamQC.downsample_threads": null,
+            "dnaSeqQC.bamQC.downsample_timeout": null,
+            "dnaSeqQC.bamQC.filter_jobMemory": null,
+            "dnaSeqQC.bamQC.filter_minQuality": null,
+            "dnaSeqQC.bamQC.filter_modules": null,
+            "dnaSeqQC.bamQC.filter_threads": null,
+            "dnaSeqQC.bamQC.filter_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_baseInterval": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_chromosomes": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_customRegions": "chr1:100000001-200000000 chr2:100000001-200000000",
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_intervalStart": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_threshold": 100000,
+            "dnaSeqQC.bamQC.findDownsampleParamsMarkDup_timeout": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_jobMemory": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsAbsolute": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_minReadsRelative": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_modules": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_preDSMultiplier": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_precision": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_targetReads": 100000,
+            "dnaSeqQC.bamQC.findDownsampleParams_threads": null,
+            "dnaSeqQC.bamQC.findDownsampleParams_timeout": null,
+            "dnaSeqQC.bamQC.indexBamFile_jobMemory": null,
+            "dnaSeqQC.bamQC.indexBamFile_modules": null,
+            "dnaSeqQC.bamQC.indexBamFile_threads": null,
+            "dnaSeqQC.bamQC.indexBamFile_timeout": null,
+            "dnaSeqQC.bamQC.markDuplicates_jobMemory": null,
+            "dnaSeqQC.bamQC.markDuplicates_modules": null,
+            "dnaSeqQC.bamQC.markDuplicates_opticalDuplicatePixelDistance": null,
+            "dnaSeqQC.bamQC.markDuplicates_picardMaxMemMb": null,
+            "dnaSeqQC.bamQC.markDuplicates_threads": null,
+            "dnaSeqQC.bamQC.markDuplicates_timeout": null,
+            "dnaSeqQC.bamQC.metadata": {
+                "donor": "Xenomorph",
+                "group id": "Weyland-Yutani",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
+                "tissue type": "Claw fragment"
+            },
+            "dnaSeqQC.bamQC.runMosdepth_jobMemory": null,
+            "dnaSeqQC.bamQC.runMosdepth_modules": null,
+            "dnaSeqQC.bamQC.runMosdepth_threads": null,
+            "dnaSeqQC.bamQC.runMosdepth_timeout": null,
+            "dnaSeqQC.bamQC.updateMetadata_jobMemory": null,
+            "dnaSeqQC.bamQC.updateMetadata_modules": null,
+            "dnaSeqQC.bamQC.updateMetadata_threads": null,
+            "dnaSeqQC.bamQC.updateMetadata_timeout": null,
+            "dnaSeqQC.bwaMem.adapter1": null,
+            "dnaSeqQC.bwaMem.adapter2": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimmingLog_timeout": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_addParam": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_jobMemory": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_modules": null,
+            "dnaSeqQC.bwaMem.adapterTrimming_timeout": null,
+            "dnaSeqQC.bwaMem.bamMerge_jobMemory": null,
+            "dnaSeqQC.bwaMem.bamMerge_modules": null,
+            "dnaSeqQC.bwaMem.bamMerge_timeout": null,
+            "dnaSeqQC.bwaMem.countChunkSize_jobMemory": null,
+            "dnaSeqQC.bwaMem.countChunkSize_timeout": null,
+            "dnaSeqQC.bwaMem.doTrim": null,
+            "dnaSeqQC.bwaMem.indexBam_jobMemory": null,
+            "dnaSeqQC.bwaMem.indexBam_modules": null,
+            "dnaSeqQC.bwaMem.indexBam_timeout": null,
+            "dnaSeqQC.bwaMem.numChunk": null,
+            "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
+            "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
+            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_threads": null,
+            "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR1_modules": null,
+            "dnaSeqQC.bwaMem.slicerR1_timeout": null,
+            "dnaSeqQC.bwaMem.slicerR2_jobMemory": null,
+            "dnaSeqQC.bwaMem.slicerR2_modules": null,
+            "dnaSeqQC.bwaMem.slicerR2_timeout": null,
+            "dnaSeqQC.bwaMem.trimMinLength": null,
+            "dnaSeqQC.bwaMem.trimMinQuality": null,
+            "dnaSeqQC.fastqR1": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.fastqR2": {
+                "contents": {
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+                    "externalIds": [
+                        {
+                            "id": "TEST",
+                            "provider": "TEST"
+                        }
+                    ]
+                },
+                "type": "EXTERNAL"
+            },
+            "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE_custom"
+        },
+        "description": "dnaSeqQC workflow test",
+        "engineArguments": {},
+        "id": "dnaSeqQC_test_CRE_custom",
+        "metadata": {
+            "dnaSeqQC.cutAdaptAllLogs": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_custom_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.log": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_custom_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            },
+            "dnaSeqQC.result": {
+                "contents": [
+                    {
+                        "outputDirectory": "@SCRATCH@/@DATE@_Workflow_dnaSeqQC_dnaSeqQC_test_CRE_custom_@JENKINSID@"
+                    }
+                ],
+                "type": "ALL"
+            }
+        },
+        "validators": [
+            {
+                "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
+                "metrics_compare": "@CHECKOUT@/tests/compare.sh",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.0.1/dnaSeqQC_test_CRE_custom.metrics",
+                "type": "script"
+            }
+        ]
+    }
+]
