@@ -1,0 +1,7 @@
+## Commands
+This section lists command(s) run by dnaseqQC workflow
+
+* Running dnaseqQC
+
+This workflow imports two other workflows, bwaMem and bamQC. See the commands in README files for these workflows.
+
