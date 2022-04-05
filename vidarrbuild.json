@@ -1,6 +1,7 @@
 {
     "names": [
-        "dnaSeqQC"
+        "dnaSeqQC",
+        "dnaSeqQC_MiSeq"
     ],
     "wdl": "dnaSeqQC.wdl"
 }
