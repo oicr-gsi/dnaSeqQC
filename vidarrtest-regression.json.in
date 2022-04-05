@@ -139,7 +139,10 @@
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_with_downsample"
         },
         "description": "dnaSeqQC workflow test",
-        "engineArguments": {},
+        "engineArguments": {
+           "read_from_cache": false,
+           "write_to_cache": false
+        },
         "id": "dnaSeqQC_test_with_downsample",
         "metadata": {
             "dnaSeqQC.cutAdaptAllLogs": {
@@ -316,7 +319,10 @@
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_without_downsample"
         },
         "description": "dnaSeqQC workflow test",
-        "engineArguments": {},
+        "engineArguments": {
+          "read_from_cache": false,
+          "write_to_cache": false
+        },
         "id": "dnaSeqQC_test_without_downsample",
         "metadata": {
             "dnaSeqQC.cutAdaptAllLogs": {
@@ -493,7 +499,10 @@
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE"
         },
         "description": "dnaSeqQC workflow test",
-        "engineArguments": {},
+        "engineArguments": {
+          "read_from_cache": false,
+          "write_to_cache": false
+        },
         "id": "dnaSeqQC_test_CRE",
         "metadata": {
             "dnaSeqQC.cutAdaptAllLogs": {
@@ -670,7 +679,10 @@
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE_custom"
         },
         "description": "dnaSeqQC workflow test",
-        "engineArguments": {},
+        "engineArguments": {
+          "read_from_cache": false,
+          "write_to_cache": false
+        },
         "id": "dnaSeqQC_test_CRE_custom",
         "metadata": {
             "dnaSeqQC.cutAdaptAllLogs": {
