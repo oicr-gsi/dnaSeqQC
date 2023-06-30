@@ -30,8 +30,7 @@ Parameter|Value|Description
 ---|---|---
 `fastqR1`|File|fastq file for read 1
 `fastqR2`|File|fastq file for read 2
-`bwaMem.runBwaMem_bwaRef`|String|The reference genome to align the sample with by BWA
-`bwaMem.runBwaMem_modules`|String|Required environment modules
+`reference`|String|Reference Assembly id
 `bwaMem.readGroups`|String|Complete read group header line
 `bamQC.bamQCMetrics_workflowVersion`|String|Workflow version string
 `bamQC.bamQCMetrics_refSizesBed`|String|Path to human genome BED reference with chromosome sizes
