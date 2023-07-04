@@ -99,9 +99,9 @@
             "dnaSeqQC.bwaMem.numChunk": null,
             "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
             "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
-            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": null,
             "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
-            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_modules": null,
             "dnaSeqQC.bwaMem.runBwaMem_threads": null,
             "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
             "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
@@ -136,6 +136,7 @@
                 },
                 "type": "EXTERNAL"
             },
+            "dnaSeqQC.reference": "hg19",
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_with_downsample"
         },
         "description": "dnaSeqQC workflow test",
@@ -279,9 +280,9 @@
             "dnaSeqQC.bwaMem.numChunk": null,
             "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
             "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
-            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": null,
             "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
-            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_modules": null,
             "dnaSeqQC.bwaMem.runBwaMem_threads": null,
             "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
             "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
@@ -316,6 +317,7 @@
                 },
                 "type": "EXTERNAL"
             },
+            "dnaSeqQC.reference": "hg19",
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_without_downsample"
         },
         "description": "dnaSeqQC workflow test",
@@ -459,9 +461,9 @@
             "dnaSeqQC.bwaMem.numChunk": null,
             "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
             "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
-            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": null,
             "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
-            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_modules": null,
             "dnaSeqQC.bwaMem.runBwaMem_threads": null,
             "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
             "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
@@ -496,6 +498,7 @@
                 },
                 "type": "EXTERNAL"
             },
+            "dnaSeqQC.reference": "hg19",
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE"
         },
         "description": "dnaSeqQC workflow test",
@@ -639,9 +642,9 @@
             "dnaSeqQC.bwaMem.numChunk": null,
             "dnaSeqQC.bwaMem.readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
             "dnaSeqQC.bwaMem.runBwaMem_addParam": null,
-            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa",
+            "dnaSeqQC.bwaMem.runBwaMem_bwaRef": null,
             "dnaSeqQC.bwaMem.runBwaMem_jobMemory": null,
-            "dnaSeqQC.bwaMem.runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12",
+            "dnaSeqQC.bwaMem.runBwaMem_modules": null,
             "dnaSeqQC.bwaMem.runBwaMem_threads": null,
             "dnaSeqQC.bwaMem.runBwaMem_timeout": null,
             "dnaSeqQC.bwaMem.slicerR1_jobMemory": null,
@@ -676,6 +679,7 @@
                 },
                 "type": "EXTERNAL"
             },
+            "dnaSeqQC.reference": "hg19",
             "dnaSeqQC.outputFileNamePrefix": "dnaSeqQC_test_CRE_custom"
         },
         "description": "dnaSeqQC workflow test",
