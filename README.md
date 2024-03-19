@@ -31,11 +31,12 @@ Parameter|Value|Description
 `fastqR1`|File|fastq file for read 1
 `fastqR2`|File|fastq file for read 2
 `reference`|String|Reference Assembly id
-`bwaMem.readGroups`|String|Complete read group header line
+`bwamem2.runBwamem2_readGroups`|String|The readgroup information to be injected into the bam header
 `bamQC.bamQCMetrics_workflowVersion`|String|Workflow version string
 `bamQC.bamQCMetrics_refSizesBed`|String|Path to human genome BED reference with chromosome sizes
 `bamQC.bamQCMetrics_refFasta`|String|Path to human genome FASTA reference
 `bamQC.metadata`|Map[String,String]|JSON file containing metadata
+`bamQC.mode`|String|running mode for the workflow, only allow value 'lane_level' and 'call_ready'
 
 
 #### Optional workflow parameters:
@@ -47,36 +48,48 @@ Parameter|Value|Default|Description
 #### Optional task parameters:
 Parameter|Value|Default|Description
 ---|---|---|---
-`bwaMem.adapterTrimmingLog_timeout`|Int|48|Hours before task timeout
-`bwaMem.adapterTrimmingLog_jobMemory`|Int|12|Memory allocated indexing job
-`bwaMem.indexBam_timeout`|Int|48|Hours before task timeout
-`bwaMem.indexBam_modules`|String|"samtools/1.9"|Modules for running indexing job
-`bwaMem.indexBam_jobMemory`|Int|12|Memory allocated indexing job
-`bwaMem.bamMerge_timeout`|Int|72|Hours before task timeout
-`bwaMem.bamMerge_modules`|String|"samtools/1.9"|Required environment modules
-`bwaMem.bamMerge_jobMemory`|Int|32|Memory allocated indexing job
-`bwaMem.runBwaMem_timeout`|Int|96|Hours before task timeout
-`bwaMem.runBwaMem_jobMemory`|Int|32|Memory allocated for this job
-`bwaMem.runBwaMem_threads`|Int|8|Requested CPU threads
-`bwaMem.runBwaMem_addParam`|String?|None|Additional BWA parameters
-`bwaMem.adapterTrimming_timeout`|Int|48|Hours before task timeout
-`bwaMem.adapterTrimming_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.adapterTrimming_addParam`|String?|None|Additional cutadapt parameters
-`bwaMem.adapterTrimming_modules`|String|"cutadapt/1.8.3"|Required environment modules
-`bwaMem.slicerR2_timeout`|Int|48|Hours before task timeout
-`bwaMem.slicerR2_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.slicerR2_modules`|String|"slicer/0.3.0"|Required environment modules
-`bwaMem.slicerR1_timeout`|Int|48|Hours before task timeout
-`bwaMem.slicerR1_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.slicerR1_modules`|String|"slicer/0.3.0"|Required environment modules
-`bwaMem.countChunkSize_timeout`|Int|48|Hours before task timeout
-`bwaMem.countChunkSize_jobMemory`|Int|16|Memory allocated for this job
-`bwaMem.numChunk`|Int|1|number of chunks to split fastq file [1, no splitting]
-`bwaMem.doTrim`|Boolean|true|if true, adapters will be trimmed before alignment
-`bwaMem.trimMinLength`|Int|1|minimum length of reads to keep [1]
-`bwaMem.trimMinQuality`|Int|0|minimum quality of read ends to keep [0]
-`bwaMem.adapter1`|String|"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC"|adapter sequence to trim from read 1 [AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC]
-`bwaMem.adapter2`|String|"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT"|adapter sequence to trim from read 2 [AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT]
+`bwamem2.adapterTrimmingLog_timeout`|Int|48|Hours before task timeout
+`bwamem2.adapterTrimmingLog_jobMemory`|Int|12|Memory allocated indexing job
+`bwamem2.indexBam_timeout`|Int|48|Hours before task timeout
+`bwamem2.indexBam_modules`|String|"samtools/1.9"|Modules for running indexing job
+`bwamem2.indexBam_jobMemory`|Int|12|Memory allocated indexing job
+`bwamem2.bamMerge_timeout`|Int|72|Hours before task timeout
+`bwamem2.bamMerge_modules`|String|"samtools/1.9"|Required environment modules
+`bwamem2.bamMerge_jobMemory`|Int|32|Memory allocated indexing job
+`bwamem2.runBwamem2_timeout`|Int|96|Hours before task timeout
+`bwamem2.runBwamem2_jobMemory`|Int|32|Memory allocated for this job
+`bwamem2.runBwamem2_threads`|Int|8|Requested CPU threads
+`bwamem2.runBwamem2_addParam`|String?|None|Additional BWA parameters
+`bwamem2.adapterTrimming_timeout`|Int|48|Hours before task timeout
+`bwamem2.adapterTrimming_jobMemory`|Int|16|Memory allocated for this job
+`bwamem2.adapterTrimming_addParam`|String?|None|Additional cutadapt parameters
+`bwamem2.adapterTrimming_adapter2`|String|"AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT"|Adapter sequence to trim from read 2
+`bwamem2.adapterTrimming_adapter1`|String|"AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC"|Adapter sequence to trim from read 1
+`bwamem2.adapterTrimming_trimMinQuality`|Int|0|Minimum quality of read ends to keep
+`bwamem2.adapterTrimming_trimMinLength`|Int|1|Minimum length of reads to keep
+`bwamem2.adapterTrimming_umiLength`|Int|5|The number of bases to trim when doUMItrim is true. If the given length is positive, the bases are removed from the beginning of each read. If it is negative, the bases are removed from the end
+`bwamem2.adapterTrimming_doUMItrim`|Boolean|false|If true, do umi trimming
+`bwamem2.adapterTrimming_modules`|String|"cutadapt/1.8.3"|Required environment modules
+`bwamem2.extractUMIs_timeout`|Int|12|Time in hours before task timeout
+`bwamem2.extractUMIs_jobMemory`|Int|24|Memory allocated for this job
+`bwamem2.extractUMIs_modules`|String|"barcodex-rs/0.1.2 rust/1.45.1"|Required environment modules
+`bwamem2.extractUMIs_pattern2`|String|"(?P<umi_1>^[ACGT]{3}[ACG])(?P<discard_1>T)|(?P<umi_2>^[ACGT]{3})(?P<discard_2>T)"|UMI RegEx pattern 2
+`bwamem2.extractUMIs_pattern1`|String|"(?P<umi_1>^[ACGT]{3}[ACG])(?P<discard_1>T)|(?P<umi_2>^[ACGT]{3})(?P<discard_2>T)"|UMI RegEx pattern 1
+`bwamem2.extractUMIs_outputPrefix`|String|"extractUMIs_output"|Specifies the start of the output files
+`bwamem2.extractUMIs_umiList`|String|"umiList"|Reference file with valid UMIs
+`bwamem2.slicerR2_timeout`|Int|48|Hours before task timeout
+`bwamem2.slicerR2_jobMemory`|Int|16|Memory allocated for this job
+`bwamem2.slicerR2_modules`|String|"slicer/0.3.0"|Required environment modules
+`bwamem2.slicerR1_timeout`|Int|48|Hours before task timeout
+`bwamem2.slicerR1_jobMemory`|Int|16|Memory allocated for this job
+`bwamem2.slicerR1_modules`|String|"slicer/0.3.0"|Required environment modules
+`bwamem2.countChunkSize_timeout`|Int|48|Hours before task timeout
+`bwamem2.countChunkSize_jobMemory`|Int|16|Memory allocated for this job
+`bwamem2.countChunkSize_modules`|String|"python/3.7"|Required environment modules
+`bwamem2.numChunk`|Int|1|Number of chunks to split fastq file [1, no splitting]
+`bwamem2.doUMIextract`|Boolean|false|If true, UMI will be extracted before alignment [false]
+`bwamem2.doTrim`|Boolean|false|If true, adapters will be trimmed before alignment [false]
+`bwamem2.numReads`|Int?|None|Number of reads
 `bamQC.collateResults_timeout`|Int|1|hours before task timeout
 `bamQC.collateResults_threads`|Int|4|Requested CPU threads
 `bamQC.collateResults_jobMemory`|Int|8|Memory allocated for this job
@@ -103,11 +116,11 @@ Parameter|Value|Default|Description
 `bamQC.downsampleRegion_timeout`|Int|4|hours before task timeout
 `bamQC.downsampleRegion_threads`|Int|4|Requested CPU threads
 `bamQC.downsampleRegion_jobMemory`|Int|16|Memory allocated for this job
-`bamQC.downsampleRegion_modules`|String|"samtools/1.9"|required environment modules
+`bamQC.downsampleRegion_modules`|String|"samtools/1.14"|required environment modules
 `bamQC.downsample_timeout`|Int|4|hours before task timeout
 `bamQC.downsample_threads`|Int|4|Requested CPU threads
 `bamQC.downsample_jobMemory`|Int|16|Memory allocated for this job
-`bamQC.downsample_modules`|String|"samtools/1.9"|required environment modules
+`bamQC.downsample_modules`|String|"samtools/1.14"|required environment modules
 `bamQC.downsample_randomSeed`|Int|42|Random seed for pre-downsampling (if any)
 `bamQC.downsample_downsampleSuffix`|String|"downsampled.bam"|Suffix for output file
 `bamQC.findDownsampleParamsMarkDup_timeout`|Int|4|hours before task timeout
@@ -128,14 +141,6 @@ Parameter|Value|Default|Description
 `bamQC.findDownsampleParams_minReadsRelative`|Int|2|Minimum value of (inputReads)/(targetReads) to allow pre-downsampling
 `bamQC.findDownsampleParams_minReadsAbsolute`|Int|10000|Minimum value of targetReads to allow pre-downsampling
 `bamQC.findDownsampleParams_targetReads`|Int|100000|Desired number of reads in downsampled output
-`bamQC.indexBamFile_timeout`|Int|4|hours before task timeout
-`bamQC.indexBamFile_threads`|Int|4|Requested CPU threads
-`bamQC.indexBamFile_jobMemory`|Int|16|Memory allocated for this job
-`bamQC.indexBamFile_modules`|String|"samtools/1.9"|required environment modules
-`bamQC.countInputReads_timeout`|Int|4|hours before task timeout
-`bamQC.countInputReads_threads`|Int|4|Requested CPU threads
-`bamQC.countInputReads_jobMemory`|Int|16|Memory allocated for this job
-`bamQC.countInputReads_modules`|String|"samtools/1.9"|required environment modules
 `bamQC.updateMetadata_timeout`|Int|4|hours before task timeout
 `bamQC.updateMetadata_threads`|Int|4|Requested CPU threads
 `bamQC.updateMetadata_jobMemory`|Int|16|Memory allocated for this job
@@ -143,8 +148,38 @@ Parameter|Value|Default|Description
 `bamQC.filter_timeout`|Int|4|hours before task timeout
 `bamQC.filter_threads`|Int|4|Requested CPU threads
 `bamQC.filter_jobMemory`|Int|16|Memory allocated for this job
-`bamQC.filter_modules`|String|"samtools/1.9"|required environment modules
+`bamQC.filter_modules`|String|"samtools/1.14"|required environment modules
 `bamQC.filter_minQuality`|Int|30|Minimum alignment quality to pass filter
+`bamQC.mergeFiles_modules`|String|"gatk/4.1.6.0"|Environment module name and version to load (space separated) before command execution.
+`bamQC.mergeFiles_timeout`|Int|24|Maximum amount of time (in hours) the task can run for.
+`bamQC.mergeFiles_cores`|Int|1|The number of cores to allocate to the job.
+`bamQC.mergeFiles_overhead`|Int|6|Java overhead memory (in GB). jobMemory - overhead == java Xmx/heap memory.
+`bamQC.mergeFiles_jobMemory`|Int|24|Memory allocated to job (in GB).
+`bamQC.mergeFiles_suffix`|String|".merge"|suffix to use for merged bam
+`bamQC.mergeSplitByIntervalFiles_modules`|String|"gatk/4.1.6.0"|Environment module name and version to load (space separated) before command execution.
+`bamQC.mergeSplitByIntervalFiles_timeout`|Int|24|Maximum amount of time (in hours) the task can run for.
+`bamQC.mergeSplitByIntervalFiles_cores`|Int|1|The number of cores to allocate to the job.
+`bamQC.mergeSplitByIntervalFiles_overhead`|Int|6|Java overhead memory (in GB). jobMemory - overhead == java Xmx/heap memory.
+`bamQC.mergeSplitByIntervalFiles_jobMemory`|Int|24|Memory allocated to job (in GB).
+`bamQC.mergeSplitByIntervalFiles_suffix`|String|".merge"|suffix to use for merged bam
+`bamQC.preFilter_timeout`|Int|4|hours before task timeout
+`bamQC.preFilter_threads`|Int|4|Requested CPU threads
+`bamQC.preFilter_minMemory`|Int|2|Minimum amount of RAM allocated to the task
+`bamQC.preFilter_jobMemory`|Int|6|Memory allocated for this job
+`bamQC.preFilter_modules`|String|"samtools/1.14"|required environment modules
+`bamQC.preFilter_filterAdditionalParams`|String?|None|Additional parameters to pass to samtools.
+`bamQC.preFilter_minMapQuality`|Int?|None|Minimum alignment quality to pass filter
+`bamQC.preFilter_filterFlags`|Int|260|Samtools filter flags to apply.
+`bamQC.getChrCoefficient_modules`|String|"samtools/1.14"|Names and versions of modules to load
+`bamQC.getChrCoefficient_timeout`|Int|1|Hours before task timeout
+`bamQC.getChrCoefficient_memory`|Int|2|Memory allocated for this job
+`bamQC.splitStringToArray_modules`|String|""|Environment module name and version to load (space separated) before command execution.
+`bamQC.splitStringToArray_timeout`|Int|1|Maximum amount of time (in hours) the task can run for.
+`bamQC.splitStringToArray_cores`|Int|1|The number of cores to allocate to the job.
+`bamQC.splitStringToArray_jobMemory`|Int|1|Memory allocated to job (in GB).
+`bamQC.splitStringToArray_recordSeparator`|String|"+"|Record separator - a delimiter for joining records
+`bamQC.splitStringToArray_lineSeparator`|String|","|Interval group separator - these are the intervals to split by.
+`bamQC.intervalsToParallelizeByString`|String|"chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22,chrX,chrY,chrM"|Comma separated list of intervals to split by (e.g. chr1,chr2,chr3,chr4).
 
 
 ### Outputs

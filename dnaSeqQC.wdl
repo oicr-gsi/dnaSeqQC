@@ -1,7 +1,12 @@
 version 1.0
 
-import "imports/pull_bwaMem.wdl" as bwaMem
+import "imports/pull_bwamem2.wdl" as bwaMem
 import "imports/pull_bamQC.wdl" as bamQC
+
+struct InputGroup {
+  File bam
+  File bamIndex
+}
 
 struct genomicResources {
   String runBwaMem_bwaRef
@@ -40,18 +45,19 @@ workflow dnaSeqQC {
     }
 
 
-    call bwaMem.bwaMem {
+    call bwaMem.bwamem2 {
       input:
         fastqR1 = fastqR1,
         fastqR2 = fastqR2,
-        outputFileNamePrefix = outputFileNamePrefix,
-        runBwaMem_bwaRef = resources[reference].runBwaMem_bwaRef,
-        runBwaMem_modules = resources[reference].runBwaMem_modules
+        reference = reference,
+        outputFileNamePrefix = outputFileNamePrefix
     }
+
+    InputGroup bamQcInput = {"bam": bwamem2.bwamem2Bam, "bamIndex": bwamem2.bwamem2Index}
 
     call bamQC.bamQC {
       input:
-        bamFile = bwaMem.bwaMemBam,
+        inputGroups = [bamQcInput],
         outputFileNamePrefix = outputFileNamePrefix
     }
 
@@ -104,8 +110,8 @@ workflow dnaSeqQC {
 
   output {
      # bwaMem outputs
-     File? log = bwaMem.log
-     File? cutAdaptAllLogs = bwaMem.cutAdaptAllLogs
+     File? log = bwamem2.log
+     File? cutAdaptAllLogs = bwamem2.cutAdaptAllLogs
 
      # bamQC outputs
      File result = bamQC.result

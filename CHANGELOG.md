@@ -1,3 +1,5 @@
+# 1.2.0 2024-03-06
+- [GRD-763](https://jira.oicr.on.ca/browse/GRD-763) Updated imported bwaMem to bwamem2
 # 1.1.0 2023-30-06
 - [GRD-645](https://jira.oicr.on.ca/browse/GRD-645) Assembly-specific settings moved inside wdl file
 # 1.0.3 2022-04-05
