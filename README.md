@@ -184,11 +184,11 @@ Parameter|Value|Default|Description
 
 ### Outputs
 
-Output | Type | Description
----|---|---
-`log`|File?|log file for bwaMem task
-`cutAdaptAllLogs`|File?|log file for cutadapt task
-`result`|File|bamQC report
+Output | Type | Description | Labels
+---|---|---|---
+`log`|File?|log file for bwaMem task|vidarr_label: log
+`cutAdaptAllLogs`|File?|log file for cutadapt task|vidarr_label: cutAdaptAllLogs
+`result`|File|bamQC report|vidarr_label: result
 
 
 ## Commands

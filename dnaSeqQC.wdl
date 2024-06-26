@@ -99,11 +99,20 @@ workflow dnaSeqQC {
         url: "https://github.com/brentp/mosdepth"
       }
       ]
-      output_meta: {
-        log: "log file for bwaMem task",
-        cutAdaptAllLogs: "log file for cutadapt task",
-        result: "bamQC report"
-      }
+    output_meta: {
+    log: {
+        description: "log file for bwaMem task",
+        vidarr_label: "log"
+    },
+    cutAdaptAllLogs: {
+        description: "log file for cutadapt task",
+        vidarr_label: "cutAdaptAllLogs"
+    },
+    result: {
+        description: "bamQC report",
+        vidarr_label: "result"
+    }
+    }
     }
 
  
