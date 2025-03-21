@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.1] - 2021-05-31
 ### Added
 - Added CHANGELOG.md
-
-### [1.0.0] Changed
+ 
+### Changed
 - Removed pom.xml, tests.json
 - Migrating to vidarr.
