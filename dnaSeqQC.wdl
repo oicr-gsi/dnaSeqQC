@@ -64,7 +64,7 @@ workflow dnaSeqQC {
     meta {
       author: "Fenglin Chen"
       email: "g3chen@oicr.on.ca"
-      description: "Calls the bwaMem-bamQC alignment as a single step."
+      description: "By importing and calling two workflows - bwaMem2 and bamQC, dnaSeqQC produces metrics for WG and other DNA sequencing data."
       dependencies: [
       {
         name: "bwa/0.7.12",
