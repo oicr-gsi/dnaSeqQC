@@ -70,9 +70,9 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland-Yutani",
-                "library design": "WY-1001",
-                "tissue origin": "LV-426",
+                "group id": "Weyland",
+                "library design": "WY",
+                "tissue origin": "LV",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -133,7 +133,7 @@
             "dnaSeqQC.bamQC.preFilter_minMapQuality": null,
             "dnaSeqQC.bamQC.preFilter_minMapQuality": null,
             "dnaSeqQC.bamQC.preFilter_filterFlags": null,
-            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
+            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:1\\tLB:neat_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_hg19_golden'",
             "dnaSeqQC.bwamem2.runBwamem2_addParam": null,
             "dnaSeqQC.bwamem2.runBwamem2_jobMemory": null,
             "dnaSeqQC.bwamem2.runBwamem2_modules": null,
@@ -161,7 +161,7 @@
             "dnaSeqQC.bwamem2.trimMinQuality": null,
             "dnaSeqQC.fastqR1": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test01_R1.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -173,7 +173,7 @@
             },
             "dnaSeqQC.fastqR2": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_with_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test01_R2.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -222,7 +222,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.2.0/dnaSeqQC_test_with_downsample.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/workflow_test_01.metrics",
                 "type": "script"
             }
         ]
@@ -300,9 +300,9 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland-Yutani",
-                "library design": "WY-1001",
-                "tissue origin": "LV-426",
+                "group id": "Weyland",
+                "library design": "WY",
+                "tissue origin": "LV",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -373,7 +373,7 @@
             "dnaSeqQC.bamQC.splitStringToArray_jobMemory": null,
             "dnaSeqQC.bamQC.splitStringToArray_recordSeparator": null,
             "dnaSeqQC.bamQC.splitStringToArray_lineSeparator": null,
-            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:1\\tLB:neat_5x_EX_hg19_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_5x_EX_hg19_golden'",
+            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:1\\tLB:neat_golden\\tPL:illumina\\tPU:run_barcode\\tSM:neat_golden'",
             "dnaSeqQC.bwamem2.runBwamem2_addParam": null,
             "dnaSeqQC.bwamem2.runBwamem2_jobMemory": null,
             "dnaSeqQC.bwamem2.runBwamem2_modules": null,
@@ -389,7 +389,7 @@
             "dnaSeqQC.bwamem2.trimMinQuality": null,
             "dnaSeqQC.fastqR1": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R1.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test02_R1.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -401,7 +401,7 @@
             },
             "dnaSeqQC.fastqR2": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_without_downsample/neat_5x_EX_hg19_chr21_R2.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test02_R2.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -450,7 +450,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.2.0/dnaSeqQC_test_without_downsample.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/workflow_test_02.metrics",
                 "type": "script"
             }
         ]
@@ -526,9 +526,9 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland-Yutani",
-                "library design": "WY-1001",
-                "tissue origin": "LV-426",
+                "group id": "Weyland",
+                "library design": "WY",
+                "tissue origin": "LV",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -601,7 +601,7 @@
             "dnaSeqQC.bwamem2.indexBam_timeout": null,
             "dnaSeqQC.bwamem2.numChunk": null,
             "dnaSeqQC.bwamem2.numReads": null,
-            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
+            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:Test_1\\tLB:CRE_Test_WG\\tPL:ILLUMINA\\tPU:Test_1\\tSM:CRE_Test'",
             "dnaSeqQC.bwamem2.runBwamem2_addParam": null,
             "dnaSeqQC.bwamem2.runBwamem2_jobMemory": null,
             "dnaSeqQC.bwamem2.runBwamem2_modules": null,
@@ -617,7 +617,7 @@
             "dnaSeqQC.bwamem2.trimMinQuality": null,
             "dnaSeqQC.fastqR1": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test03.annotated.subset_R1.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -629,7 +629,7 @@
             },
             "dnaSeqQC.fastqR2": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test03.annotated.subset_R2.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -678,7 +678,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.2.0/dnaSeqQC_test_CRE.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/workflow_test_03.metrics",
                 "type": "script"
             }
         ]
@@ -754,9 +754,9 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland-Yutani",
-                "library design": "WY-1001",
-                "tissue origin": "LV-426",
+                "group id": "Weyland",
+                "library design": "WY",
+                "tissue origin": "LV",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -829,7 +829,7 @@
             "dnaSeqQC.bwamem2.indexBam_timeout": null,
             "dnaSeqQC.bwamem2.numChunk": null,
             "dnaSeqQC.bwamem2.numReads": null,
-            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tLB:CRE_0002_Pb_R_PE_409_WG\\tPL:ILLUMINA\\tPU:200124_A00469_0077_BHNGLTDSXX-GAGACGAT-TAACCGGT_2\\tSM:CRE_0002_Pb_R'",
+            "dnaSeqQC.bwamem2.runBwamem2_readGroups": "'@RG\\tID:Test_2\\tLB:CRE_Test_WG\\tPL:ILLUMINA\\tPU:Test_2\\tSM:CRE_Test'",
             "dnaSeqQC.bwamem2.runBwamem2_addParam": null,
             "dnaSeqQC.bwamem2.runBwamem2_jobMemory": null,
             "dnaSeqQC.bwamem2.runBwamem2_modules": null,
@@ -845,7 +845,7 @@
             "dnaSeqQC.bwamem2.trimMinQuality": null,
             "dnaSeqQC.fastqR1": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R1.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test04.annotated.subset_R1.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -857,7 +857,7 @@
             },
             "dnaSeqQC.fastqR2": {
                 "contents": {
-                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/input_data/dnaSeqQC_test_CRE_custom/SWID_15949654_CRE_0002_Pb_R_PE_409_WG_200124_A00469_0077_BHNGLTDSXX_GAGACGAT-TAACCGGT_L002_001.annotated.subset_R2.fastq.gz",
+                    "configuration": "/.mounts/labs/gsi/testdata/dnaSeqQC/test_inputs/Test04.annotated.subset_R2.fastq.gz",
                     "externalIds": [
                         {
                             "id": "TEST",
@@ -906,7 +906,7 @@
             {
                 "metrics_calculate": "@CHECKOUT@/tests/calculate.sh",
                 "metrics_compare": "@CHECKOUT@/tests/compare.sh",
-                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/1.2.0/dnaSeqQC_test_CRE_custom.metrics",
+                "output_metrics": "/.mounts/labs/gsi/testdata/dnaSeqQC/output_metrics/workflow_test_04.metrics",
                 "type": "script"
             }
         ]
