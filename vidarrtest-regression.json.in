@@ -70,7 +70,7 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland",
+                "group id": "Weyland-Yutani",
                 "library design": "WY",
                 "tissue origin": "LV",
                 "tissue type": "Claw fragment"
@@ -300,7 +300,7 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland",
+                "group id": "Weyland-Yutani",
                 "library design": "WY",
                 "tissue origin": "LV",
                 "tissue type": "Claw fragment"
@@ -526,7 +526,7 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland",
+                "group id": "Weyland-Yutani",
                 "library design": "WY",
                 "tissue origin": "LV",
                 "tissue type": "Claw fragment"
@@ -754,7 +754,7 @@
             "dnaSeqQC.bamQC.markDuplicates_timeout": null,
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
-                "group id": "Weyland",
+                "group id": "Weyland-Yutani",
                 "library design": "WY",
                 "tissue origin": "LV",
                 "tissue type": "Claw fragment"
