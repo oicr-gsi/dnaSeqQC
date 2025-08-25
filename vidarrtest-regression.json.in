@@ -71,8 +71,8 @@
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
                 "group id": "Weyland-Yutani",
-                "library design": "WY",
-                "tissue origin": "LV",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -301,8 +301,8 @@
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
                 "group id": "Weyland-Yutani",
-                "library design": "WY",
-                "tissue origin": "LV",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -527,8 +527,8 @@
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
                 "group id": "Weyland-Yutani",
-                "library design": "WY",
-                "tissue origin": "LV",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
@@ -755,8 +755,8 @@
             "dnaSeqQC.bamQC.metadata": {
                 "donor": "Xenomorph",
                 "group id": "Weyland-Yutani",
-                "library design": "WY",
-                "tissue origin": "LV",
+                "library design": "WY-1001",
+                "tissue origin": "LV-426",
                 "tissue type": "Claw fragment"
             },
             "dnaSeqQC.bamQC.mergeSplitByIntervalFiles_modules": null,
