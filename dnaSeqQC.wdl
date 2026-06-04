@@ -31,20 +31,20 @@ workflow dnaSeqQC {
 
     Map[String,genomicResources] resources = {
       "hg19": {
-        "runBwaMem_bwaRef": "$HG19_BWA_INDEX_ROOT/hg19_random.fa", 
-        "runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg19-bwa-index/0.7.12"
+        "runBwaMem_bwaRef": "$HG19_BWAMEM2_INDEX_ROOT/hg19_index", 
+        "runBwaMem_modules": "samtools/1.9 bwa-mem2/2.2.1 hg19-bwamem2-index/2.2.1"
       },
       "hg38": {
-        "runBwaMem_bwaRef": "$HG38_BWA_INDEX_ROOT/hg38_random.fa",
-        "runBwaMem_modules": "samtools/1.9 bwa/0.7.12 hg38-bwa-index/0.7.12"
+        "runBwaMem_bwaRef": "$HG38_BWAMEM2_INDEX_WITH_ALT_ROOT/hg38_random.fa",
+        "runBwaMem_modules": "samtools/1.9 bwa-mem2/2.2.1 hg38-bwamem2-index-with-alt/2.2.1"
       },
       "hg38_noAlt": {
         "runBwaMem_bwaRef": "$HG38_BWA_INDEX_NOALT_ROOT/hg38_noAlt.fa",
         "runBwaMem_modules": "samtools/1.9 bwa/0.7.17 hg38-bwa-index-noalt/0.7.17"
       },
       "mm10": {
-        "runBwaMem_bwaRef": "$MM10_BWA_INDEX_ROOT/mm10.fa",
-        "runBwaMem_modules": "samtools/1.9 bwa/0.7.12 mm10-bwa-index/0.7.12"
+        "runBwaMem_bwaRef": "$MM10_BWAMEM2_INDEX_ROOT/mm10.fa",
+        "runBwaMem_modules": "samtools/1.9 bwa-mem2/2.2.1 mm10-bwamem2-index/2.2.1"
       }
     }
 
